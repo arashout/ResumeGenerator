@@ -82,6 +82,13 @@
             </ul>
         </div>
     </div>
+    <div id='skills' class='section'>
+        <h2 class="subtitle">Languages and Technologies</h2>
+        <hr>
+        {% for skill in skills %}
+        <li>{{skill.name}}: {{ skill.keywords|join(', ') }}</li>  
+        {% endfor %}
+    </div>
 
 </body>
 

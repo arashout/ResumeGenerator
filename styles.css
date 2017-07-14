@@ -1,10 +1,10 @@
 html {
-  font-size: 13pt;
+  font-size: 14pt;
   font-family: Arial; }
 
 body {
-  width: 210mm;
-  padding: 5mm 10mm 5mm; }
+  width: 8.5in;
+  padding: 0.25in 0.25in 0in; }
 
 hr {
   margin: 0px 0px 5px;
@@ -14,6 +14,9 @@ hr {
 
 table {
   width: 100%; }
+
+th {
+  white-space: nowrap; }
 
 .left {
   text-align: left; }
@@ -43,9 +46,12 @@ li {
   margin: 5px 0px 5px; }
 
 th {
-  width: 70mm; }
+  width: 2.83333in; }
 
 .marginless {
   margin: 0px; }
+
+#projects > div > ul > li {
+  margin: 9px 0px 9px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,6 @@ import os
 from jinja2 import Environment, FileSystemLoader
 import json
 import pdfkit
-from xhtml2pdf import pisa   
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_ENVIRONMENT = Environment(
@@ -50,5 +49,4 @@ if __name__ == '__main__':
     output_html = 'out.html'
     output_pdf = 'resume.pdf'
     create_index_html(template_html, output_html, json_resume)
-    pisa.showLogging()
-    convertHtmlToPdf(output_html, output_pdf)
+    create_pdf_from_html(output_html, output_pdf)
