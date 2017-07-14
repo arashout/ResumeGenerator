@@ -27,7 +27,7 @@ if __name__ == '__main__':
     with open('resume.json', 'r') as f:
         json_resume = json.load(f)
 
-    template_html = 'table_resume.html'
+    template_html = 'resume.html'
     output_html = 'out.html'
     output_pdf = 'resume.pdf'
     create_index_html(template_html, output_html, json_resume)
