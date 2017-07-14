@@ -18,31 +18,32 @@
             <table>
                 <tr>
                     <td class="left">{{basics.location.address}}</td>
-                    <td class="center" rowspan="2">{{basics.name}}</td>
+                    <td class="center title" rowspan="3">{{basics.name}}</td>
                     <td class="right">{{basics.phone}}</td>
                 </tr>
                 <tr>
-                    <td>{{basics.location.city}}, {{basics.location.regionCode}}</td>
-                    <td>{{basics.email}}</td>
+                    <td class="left">{{basics.location.city}}, {{basics.location.regionCode}}</td>
+                    <td class="right">{{basics.email}}</td>
                 </tr>
             </table>
         </div>
     </div>
     <div id='employment' class='section'>
-        <h2 class="subtitle is-4">Experience</h2>
-        <hr> {% for experience in work %}
-        <div class='sub-section content'>
-            <div class='columns header'>
-                <div class='column has-text-left'>{{experience.position}}</div>
-                <div class='column has-text-centered'>{{experience.company}}</div>
-                <div class='column has-text-right'>{{experience.startReadable}} - {{experience.endReadable}}</div>
-            </div>
-            <ul>
-                {% for highlight in experience.highlights%}
-                <li>{{highlight}}</li>
-                {% endfor %}
-            </ul>
-        </div>
+        <p class="subtitle">Experience</p>
+        <hr>
+        {% for experience in work %}
+        <table>
+            <tr>
+                <td class="left">{{experience.position}}</td>
+                <td class="center">{{experience.company}}</td>
+                <td class="right">{{experience.startReadable}} - {{experience.endReadable}}</td>
+            </tr>
+        </table>
+        <ul>
+            {% for highlight in experience.highlights%}
+            <li>{{highlight}}</li>
+            {% endfor %}
+        </ul>
         {% endfor %}
     </div>
     <div id='education' class='section'>

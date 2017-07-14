@@ -19,3 +19,12 @@ table{
 .center{
     text-align: center;
 }
+.title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.subtitle{
+    margin: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
