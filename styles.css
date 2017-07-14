@@ -1,0 +1,33 @@
+body {
+    width: 210mm;
+    padding: 0px 10mm 0px;
+}
+hr{
+    margin: 0px;
+    background-color: black;
+}
+.header{
+    font-weight: bold;
+}
+.columns{
+    margin: 0px !important;
+}
+.column{
+    margin: 0px !important;
+    padding: 2px 0px 2px;
+}
+.subtitle{
+    margin: 0px 0px 1px !important;
+}
+.section{
+    padding: 0px;
+    margin: 15px 0px 0px;
+}
+.content ul{
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 0px !important;
+}
+.content:not(:last-child) {
+    margin-bottom: 10px;
+}
