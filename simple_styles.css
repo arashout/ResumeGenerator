@@ -1,0 +1,21 @@
+body {
+    width: 210mm;
+    padding: 0px 10mm 0px;
+}
+hr{
+    margin: 0px;
+    background-color: black;
+}
+table{
+    width: 100%;
+}
+
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.center{
+    text-align: center;
+}

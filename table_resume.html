@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Career Cup Resume Template</title>
+    <meta name='description' content='Career Cup Resume Template'>
+    <meta name='author' content='Arash Outadi'>
+
+    <link rel='stylesheet' href='simple_styles.css'>
+</head>
+
+<body>
+    <div id='resume'>
+        <div id='contact' class='section'>
+            <table>
+                <tr>
+                    <td class="left">{{basics.location.address}}</td>
+                    <td class="center" rowspan="2">{{basics.name}}</td>
+                    <td class="right">{{basics.phone}}</td>
+                </tr>
+                <tr>
+                    <td>{{basics.location.city}}, {{basics.location.regionCode}}</td>
+                    <td>{{basics.email}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id='employment' class='section'>
+        <h2 class="subtitle is-4">Experience</h2>
+        <hr> {% for experience in work %}
+        <div class='sub-section content'>
+            <div class='columns header'>
+                <div class='column has-text-left'>{{experience.position}}</div>
+                <div class='column has-text-centered'>{{experience.company}}</div>
+                <div class='column has-text-right'>{{experience.startReadable}} - {{experience.endReadable}}</div>
+            </div>
+            <ul>
+                {% for highlight in experience.highlights%}
+                <li>{{highlight}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    <div id='education' class='section'>
+        <h2 class="subtitle is-4">Education</h2>
+        <hr> {% for credential in education %}
+        <div class='columns header'>
+            <div class='column has-text-left'>{{credential.location.city}}, {{credential.location.regionCode}}</div>
+            <div class='column has-text-centered'>{{credential.institution}}</div>
+            <div class='column has-text-right'>{{credential.startReadable}} - {{credential.endReadable}}</div>
+        </div>
+        <div>
+            <p>{{credential.studyTypeAbbreviation}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</p>
+        </div>
+        {% endfor %}
+    </div>
+    <div id='projects' class='section'>
+        <h2 class="subtitle is-4">Projects</h2>
+        <hr>
+        <div class='sub-section content'>
+            <ul>
+                {% for project in projects %}
+                <li><b>{{project.name}}</b>&nbsp;({{project.website}}) {{project.summary}} <i>
+                    {% for tech in project.technologies %}{{tech}}, {% endfor %}</i> </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
