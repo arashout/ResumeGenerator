@@ -31,4 +31,4 @@ if __name__ == '__main__':
     output_html = 'out.html'
     output_pdf = 'resume.pdf'
     create_index_html(template_html, output_html, json_resume)
-    create_pdf_from_html(output_html, output_pdf)
+    #create_pdf_from_html(output_html, output_pdf)

@@ -1,4 +1,6 @@
-.vscode
+.vscode/*
 
 resume.json
 out.html
+*.map
+.sass-cache/*
