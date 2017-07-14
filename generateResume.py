@@ -21,7 +21,7 @@ def create_index_html(template, file_name, context):
 
 
 def create_pdf_from_html(html_name, pdf_name):
-    pdfkit.from_file(html_name, pdf_name)
+    pdfkit.from_file(html_name, pdf_name, options={'page-size': 'Letter'})
 
 if __name__ == '__main__':
     with open('resume.json', 'r') as f:
@@ -31,4 +31,4 @@ if __name__ == '__main__':
     output_html = 'out.html'
     output_pdf = 'resume.pdf'
     create_index_html(template_html, output_html, json_resume)
-    #create_pdf_from_html(output_html, output_pdf)
+    create_pdf_from_html(output_html, output_pdf)

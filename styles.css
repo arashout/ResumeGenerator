@@ -1,10 +1,16 @@
+html {
+  font-size: 13pt;
+  font-family: Arial; }
+
 body {
-  width: 960px;
-  padding: 10px 20px 10px; }
+  width: 210mm;
+  padding: 5mm 10mm 5mm; }
 
 hr {
-  margin: 0px;
-  background-color: black; }
+  margin: 0px 0px 5px;
+  background-color: black;
+  height: 1px;
+  noshade: disabled; }
 
 table {
   width: 100%; }
@@ -19,12 +25,27 @@ table {
   text-align: center; }
 
 .title {
-  font-size: 40px;
-  font-weight: bold; }
+  font-size: 2.5rem;
+  font-weight: normal; }
+
+.section {
+  margin-bottom: 15px; }
 
 .subtitle {
   margin: 0px;
-  font-size: 25px;
+  font-size: 1.25rem;
   font-weight: bold; }
+
+ul {
+  margin-top: 0px; }
+
+li {
+  margin: 5px 0px 5px; }
+
+th {
+  width: 70mm; }
+
+.marginless {
+  margin: 0px; }
 
 /*# sourceMappingURL=styles.css.map */

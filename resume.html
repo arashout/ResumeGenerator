@@ -30,43 +30,54 @@
     </div>
     <div id='employment' class='section'>
         <p class="subtitle">Experience</p>
-        <hr>
-        {% for experience in work %}
         <table>
+            <hr> {% for experience in work %}
+
             <tr>
                 <th class="left">{{experience.position}}</th>
                 <th class="center">{{experience.company}}</th>
                 <th class="right">{{experience.startReadable}} - {{experience.endReadable}}</th>
             </tr>
-        </table>
-        <ul>
-            {% for highlight in experience.highlights%}
-            <li>{{highlight}}</li>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        {% for highlight in experience.highlights%}
+                        <li>{{highlight}}</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+
             {% endfor %}
-        </ul>
-        {% endfor %}
+        </table>
     </div>
     <div id='education' class='section'>
-        <h2 class="subtitle is-4">Education</h2>
+        <h2 class="subtitle">Education</h2>
         <hr> {% for credential in education %}
-        <div class='columns header'>
-            <div class='column has-text-left'>{{credential.location.city}}, {{credential.location.regionCode}}</div>
-            <div class='column has-text-centered'>{{credential.institution}}</div>
-            <div class='column has-text-right'>{{credential.startReadable}} - {{credential.endReadable}}</div>
-        </div>
+        <table>
+            <tr>
+                <th class="left">{{credential.location.city}}, {{credential.location.regionCode}}</th>
+                <th class="center">{{credential.institution}}</th>
+                <th class="right">{{credential.startReadable}} - {{credential.endReadable}}</th>
+        </table>
         <div>
-            <p>{{credential.studyTypeAbbreviation}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</p>
+            <p class='marginless'>{{credential.studyTypeAbbreviation}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</p>
         </div>
         {% endfor %}
     </div>
     <div id='projects' class='section'>
-        <h2 class="subtitle is-4">Projects</h2>
+        <h2 class="subtitle">Projects</h2>
         <hr>
-        <div class='sub-section content'>
+        <div>
             <ul>
                 {% for project in projects %}
-                <li><b>{{project.name}}</b>&nbsp;({{project.website}}) {{project.summary}} <i>
-                    {% for tech in project.technologies %}{{tech}}, {% endfor %}</i> </li>
+                <li><b>{{project.name}}</b>&nbsp;
+                    {% if project.website != '' %}<a href="{{project.website}}">({{project.websiteName}}){% endif %}</a> 
+                    {% if project.githubRepo != '' %}<a href="{{project.githubRepo}}">(Github){% endif %}</a>
+                    <i>{% for tech in project.technologies %}{{tech}}, {% endfor %}</i><br>
+                    {{project.summary}}<br> 
+                    
+                </li>
                 {% endfor %}
             </ul>
         </div>
