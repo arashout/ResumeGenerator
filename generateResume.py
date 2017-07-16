@@ -103,13 +103,14 @@ class GenerateResume(object):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('path_json_resume', help='Path to json resume, containing input data for html and pdf resumes')
-    parser.add_argument("--path_json_anon", help="Path to json anon dictionary, where:\n"
+    parser.add_argument("-a","--path_json_anon", help="Path to json anon dictionary, where:\n"
                         "keys = sensitive information to replace\n"
                         "values = generic text to replace sensitive text"
                         )
     current_directory = os.path.dirname(os.path.abspath(__file__))
 
     args = parser.parse_args()
+
     gr = GenerateResume(
         working_directory=current_directory,
         path_json_resume=args.path_json_resume,

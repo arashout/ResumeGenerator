@@ -1,6 +1,7 @@
 # ResumeGenerator
 Generate a PDF resume formatted as perscribed by [Gayle McDowell from CareerCup, author of Cracking The Coding Interview](https://www.careercup.com/resume)
-using your [JSON resume](https://jsonresume.org/schema/).        
+using your [JSON resume](https://jsonresume.org/schema/).
+Here's a ![preview of what it will look like](preview_resume.pdf)
 ## Instructions
 
 ### Setup resume.json
@@ -60,7 +61,7 @@ python generateResume.py path_to_resume.json
 ```
 Optionally you can anonymize your PDF by supplying a second argument
 ```bash
-python generateResume.py path_to_resume.json path_to_anon_data.json
+python generateResume.py path_to_resume.json -a path_to_anon_data.json
 ```
 Where `anon_data.json` is a json dictionary where the keys are sensitive information
 you want to replace and the values are generic text to replace them with
