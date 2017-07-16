@@ -36,7 +36,7 @@
             <tr>
                 <th class="left">{{experience.position}}</th>
                 <th class="center">{{experience.company}}</th>
-                <th class="right">{{experience.startReadable}} - {{experience.endReadable}}</th>
+                <th class="right">{{experience.startDateCustom}} - {{experience.endDateCustom}}</th>
             </tr>
             <tr>
                 <td colspan="3">
@@ -58,11 +58,11 @@
             <tr>
                 <th class="left">{{credential.location.city}}, {{credential.location.regionCode}}</th>
                 <th class="center">{{credential.institution}}</th>
-                <th class="right">{{credential.startReadable}} - {{credential.endReadable}}</th>
+                <th class="right">{{credential.startDateCustom}} - {{credential.endDateCustom}}</th>
         </table>
-        <div>
-            <p class='marginless'>{{credential.studyTypeAbbreviation}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</p>
-        </div>
+        <ul>
+            <li>{{credential.studyTypeAbbreviation}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</li>
+        </ul>
         {% endfor %}
     </div>
     <div id='projects' class='section'>
