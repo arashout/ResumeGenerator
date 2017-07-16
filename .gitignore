@@ -1,0 +1,13 @@
+.vscode/
+.idea/
+
+# Sensitive stuff
+
+arash_resume.json
+arash_anon.json
+resume.pdf
+*resume.html
+*temp.html
+*out.html
+*.map
+.sass-cache/*

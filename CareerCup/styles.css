@@ -1,0 +1,57 @@
+html {
+  font-size: 14pt;
+  font-family: Arial; }
+
+body {
+  width: 8.5in;
+  padding: 0.25in 0.25in 0in; }
+
+hr {
+  margin: 0px 0px 5px;
+  background-color: black;
+  height: 1px;
+  noshade: disabled; }
+
+table {
+  width: 100%; }
+
+th {
+  white-space: nowrap; }
+
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.center {
+  text-align: center; }
+
+.title {
+  font-size: 2.5rem;
+  font-weight: normal; }
+
+.section {
+  margin-bottom: 15px; }
+
+.subtitle {
+  margin: 0px;
+  font-size: 1.25rem;
+  font-weight: bold; }
+
+ul {
+  margin-top: 0px; }
+
+li {
+  margin: 5px 0px 5px; }
+
+th {
+  width: 2.83333in; }
+
+.marginless {
+  margin: 0px; }
+
+#projects > div > ul > li {
+  margin: 9px 0px 9px; }
+
+/*# sourceMappingURL=styles.css.map */
