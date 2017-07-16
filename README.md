@@ -1,7 +1,7 @@
 # ResumeGenerator
 Generate a PDF resume formatted as perscribed by [Gayle McDowell from CareerCup, author of Cracking The Coding Interview](https://www.careercup.com/resume)
 using your [JSON resume](https://jsonresume.org/schema/).
-Here's a ![preview of what it will look like](preview_resume.pdf)
+Here's a ![preview of what it will look like](preview_resume.png)
 ## Instructions
 
 ### Setup resume.json
