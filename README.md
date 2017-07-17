@@ -7,11 +7,11 @@ Here's a preview ![preview of resume generated](preview_resume.png)
 ### Setup resume.json
 
 Before running the command line program there are a couple changes to the json resume we need to make:
-1. Inside **location** objects, everywhere there is **region** key we need to add a **regionCode** key
+1. Inside **location** objects, everywhere there is **region** key we need to add a **regionCode** key      
 e.g `"region": "British Columbia", "regionCode": "BC"`
 2. Inside all education items add a `location` object with `regionCode` keys as well
 3. Add a new category `"projects"` formatted similar to the volunteer category
-Notice the new fields `websiteName` and `githubRepo`
+Notice the new fields `websiteName` and `githubRepo`         
 e.g
 ```javascript
 "projects": [
