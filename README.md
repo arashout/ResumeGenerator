@@ -77,3 +77,6 @@ e.g.
     "The Times" : "School Newspaper"
 }
 ```
+
+#### CareerCup Template
+If you don't really care about the CLI tool and just want the HTML template, navigate to the CareerCup directory and you'll find the Jinja2 HTML template and the styles.css stylesheet.
