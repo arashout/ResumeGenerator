@@ -111,6 +111,9 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    base_resume_name = os.path.splitext(args.path_json_resume)[0]
+    resume_pdf_name = base_resume_name + '.pdf'
+
     gr = GenerateResume(
         working_directory=current_directory,
         path_json_resume=args.path_json_resume,
@@ -119,4 +122,4 @@ if __name__ == '__main__':
     if args.path_json_anon:
         gr.add_json_anon(args.path_json_anon)
 
-    gr.create_pdf_from_html('resume.pdf')
+    gr.create_pdf_from_html(resume_pdf_name)

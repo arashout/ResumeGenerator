@@ -3,8 +3,8 @@
 
 # Sensitive stuff
 
-arash_resume.json
-arash_anon.json
+arash_resume*
+arash_anon*
 resume.pdf
 *resume.html
 *temp.html
