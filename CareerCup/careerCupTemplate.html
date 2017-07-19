@@ -82,6 +82,7 @@
             </ul>
         </div>
     </div>
+    {% if settings.includeSkills == 'True' %}
     <div id='skills' class='section'>
         <h2 class="subtitle">Languages and Technologies</h2>
         <hr>
@@ -91,7 +92,7 @@
         {% endfor %}
         </ul>
     </div>
-
+    {% endif %}
 </body>
 
 </html>
