@@ -17,12 +17,8 @@
         <div id='contact' class='section'>
             <table>
                 <tr>
-                    <td class="left">{{basics.location.address}}</td>
-                    <td class="center title" rowspan="3">{{basics.name}}</td>
-                    <td class="right">{{basics.phone}}</td>
-                </tr>
-                <tr>
-                    <td class="left">{{basics.location.city}}, {{basics.location.regionCode}}</td>
+                    <td class="left">{{basics.location.city}}, {{basics.location.countryCode}}</td>
+                    <td class="center title" rowspan="2">{{basics.name}}</td>
                     <td class="right">{{basics.email}}</td>
                 </tr>
             </table>
@@ -36,7 +32,7 @@
             <tr>
                 <th class="left">{{experience.position}}</th>
                 <th class="center">{{experience.company}}</th>
-                <th class="right">{{experience.startDateCustom}} - {{experience.endDateCustom}}</th>
+                <th class="right">{{experience.startDate | dateformat}} - {{experience.endDate | dateformat}}</th>
             </tr>
             <tr>
                 <td colspan="3">
@@ -58,7 +54,7 @@
             <tr>
                 <th class="left">{{credential.location.city}}, {{credential.location.regionCode}}</th>
                 <th class="center">{{credential.institution}}</th>
-                <th class="right">{{credential.startDateCustom}} - {{credential.endDateCustom}}</th>
+                <th class="right">{{credential.startDate | dateformat}} - {{credential.endDate | dateformat}}</th>
         </table>
         <ul>
             <li>{{credential.studyType}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</li>
@@ -72,11 +68,9 @@
             <ul>
                 {% for project in projects %}
                 <li><b>{{project.name}}</b>&nbsp;
-                    {% if project.website != '' %}<a href="{{project.website}}">({{project.websiteName}}){% endif %}</a> 
-                    {% if project.githubRepo != '' %}<a href="{{project.githubRepo}}">(Github){% endif %}</a>
+                    {% if project.source is defined %}<a href="{{project.source}}">(Github){% endif %}</a>
                     <i>{% for tech in project.technologies %}{{tech}}, {% endfor %}</i><br>
                     {{project.summary}}<br> 
-                    
                 </li>
                 {% endfor %}
             </ul>
