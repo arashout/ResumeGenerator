@@ -32,7 +32,11 @@
             <tr>
                 <th class="left">{{experience.position}}</th>
                 <th class="center">{{experience.company}}</th>
+                {% if experience.endDate is not none %}
                 <th class="right">{{experience.startDate | dateformat}} - {{experience.endDate | dateformat}}</th>
+                {% else %}
+                <th class="right">{{experience.startDate | dateformat}} - Present</th>
+                {% endif %}
             </tr>
             <tr>
                 <td colspan="3">

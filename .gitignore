@@ -1,6 +1,9 @@
 .vscode/
 .idea/
 
+#Python 
+__pycache__/
+
 # Sensitive stuff
 
 arash_resume*

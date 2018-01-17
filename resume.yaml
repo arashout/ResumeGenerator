@@ -45,9 +45,9 @@ basics:
         <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i> </span> </a>
 work:
   - company: Ravelin
-    position: Software Engineering Intern
+    position: Junior Software Engineer
     startDate: 2017-09-12T00:00:00.000Z
-    endDate: 2017-12-12T00:00:00.000Z
+    endDate: 
     highlights:
       - >-
         Worked as a full-stack engineer primarily working on our client facing
@@ -55,7 +55,10 @@ work:
       - >-
         Wrote extensive unit + integration tests for both back-end and
         front-end components
-      - Independently implemented new features and bug fixes as required by JIRA tickets
+      - >- 
+        Independently resolved 50+ JIRA tickets which required implementing new features
+        or fixing bugs
+      
     technologies:
       - Angular
       - Golang
