@@ -1,0 +1,16 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+"jinja2" = "==2.9.6"
+pdfkit = "==0.6.1"
+pyyaml = "*"
+
+
+[dev-packages]
+

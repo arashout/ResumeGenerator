@@ -110,44 +110,47 @@ education:
     endDate: 2019-05-01
     gpa: 3.6/4.3
 projects:
-  - name: RoboRooney
-    source: 'https://github.com/arashout/RoboRooneyStarter'
-    summary: >-
-      Slack-bot to quickly scan all available openings at football pitches using
-      the MyLocalPitch API and help arrange scrimmages through Slack
-    technologies:
-      - Go
-      - Slack
-      - Heroku
   - name: JobBot
     source: 'https://github.com/arashout/JobBot'
     summary: >-
-      Robot that can automatically search and apply to jobs on Angel and Indeed
-      with a custom cover letters based on a template and provided keywords.
-      This bot helped me get my job at Ravelin! 
+      The bot that landed me my job at Ravelin! It's automatically able
+      to apply to job listings using personalized cover letter based on 
+      keywords from the job description. It also got passed many 
+      screening questions using NLP techniques.
     technologies:
       - Python
       - Selenium
       - XPath
       - NLP
+  - name: Improved UBC Transcript
+    source: 'https://github.com/arashout/ImprovedUBCTranscript'
+    writeup: 'http://arashout.site/posts/improved-ubc-transcript'
+    summary: >-
+      Bookmarklet that enhances and beautifies the unofficial UBC transcript,
+      it gets about 450 hits per month and is included as a sidebar resource
+      on the r/UBC subreddit!
+    technologies:
+      - Python
+      - Flask
+      - TypeScript
+      - MongoDB
   - name: Blob Combat Simulation
     source: 'https://github.com/arashout/BlobCombatSimulator'
     summary: >-
-      Developed a simulation where 'blobs' evolve to fight using neural networks
-      and different genetic selection algorithms
+      Combat simulation where 'blobs' evolve over time using 
+      neural networks and genetic algorithms. Includes fast-forward
+      button to significantly reduce training time.
     technologies:
       - C++
       - SFML
       - QtCreator
       - Eigen
-  - name: Improved UBC Transcript
-    source: 'https://github.com/arashout/ImprovedUBCTranscript'
-    writeup: 'http://arashout.site/posts/improved-ubc-transcript'
+  - name: RoboRooney
+    source: 'https://github.com/arashout/RoboRooneyStarter'
     summary: >-
-      Bookmarklet that enhances and beautifies the UBC unofficial transcript
-      which  gets about 450 hits per month and has been very well recieved by
-      UBC community on Reddit.
+      Slack-bot to quickly scan all available openings at football pitches using
+      the MyLocalPitch API and help arrange soccer scrimmages through Slack
     technologies:
-      - Python
-      - Flask
-      - TypeScript
+      - Go
+      - Slack
+      - Heroku
