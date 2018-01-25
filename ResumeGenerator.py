@@ -53,4 +53,4 @@ class ResumeGenerator(object):
         temp_html_path = os.path.join(PATH_CAREER_CUP_DIRECTORY, 'temp.html')
         self.create_html_resume(temp_html_path)
         pdfkit.from_file(temp_html_path, output_pdf,
-                         options={'page-size': 'Letter'})
+                         options={'page-size': 'Letter', 'dpi':400})
