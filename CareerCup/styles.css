@@ -3,8 +3,8 @@ html {
   font-family: Arial; }
 
 body {
-  width: 8.5in;
-  padding: 0in 0.25in 0in 0.25in; }
+  width: 9in;
+  padding: 0in 0.1in 0in 0.3in; }
 
 hr {
   margin: 0px 0px 5px;
@@ -47,10 +47,12 @@ li {
   margin: 5px 0px 5px; }
 
 th {
-  width: 2.8333333333in; }
+  width: 3in; }
 
 .marginless {
   margin: 0px; }
 
 #projects > div > ul > li {
   margin: 9px 0px 9px; }
+
+/*# sourceMappingURL=styles.css.map */

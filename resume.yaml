@@ -50,14 +50,14 @@ work:
     endDate: 
     highlights:
       - >-
-        Worked as a full-stack engineer primarily working on our client facing
-        dashboard built with AngularJS, TypeScript and Go micro-services
+        Full stack engineer who primarily works on the client facing dashboard
+        built with TypeScript, AngularJS and powered by Go micro-services.
       - >-
-        Wrote extensive unit + integration tests for both back-end and
-        front-end components
+        Resolved 50+ JIRA tickets implementing new features, refactoring legacy code
+        and solving bugs while following sounds software engineering practices.
       - >- 
-        Independently resolved 50+ JIRA tickets which required implementing new features
-        or fixing bugs
+        Wrote extensive unit tests and integration tests for both backend and 
+        frontend components. 
       
     technologies:
       - Angular
@@ -72,7 +72,7 @@ work:
     highlights:
       - >-
         Using SAP API and VBA created a suite of Excel tools for Project
-        Managers that saved them 10 hours every week
+        Managers saving them 10 hours every week
       - >-
         Developed Python database app with SQLite to reduce time searching for
         SAP materials by 50%
