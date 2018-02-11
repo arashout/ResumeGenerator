@@ -14,36 +14,36 @@ basics:
     region: London
     regionCode: null
   htmlTitle: Mechanical Engineer &rArr; Software Engineer
-  profiles:
-    - website: Gmail
-      username: arash.out@gmail.com
-      url: 'mailto:arash'
-      html: >-
-        <a href='mailto:arash.out@gmail.com' title='Email me'> <span
-        class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
-        class='fa fa-envelope fa-stack-1x fa-inverse'></i> </span> </a>
-    - website: Github
-      username: arashout
-      url: 'https://github.com/arashout'
-      html: >-
-        <a href='https://github.com/arashout' title='Github'> <span
-        class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
-        class='fa fa-github fa-stack-1x fa-inverse'></i> </span> </a>
-    - website: LinkedIn
-      username: arashout
-      url: 'https://www.linkedin.com/in/arashout/'
-      html: >-
-        <a href='https://www.linkedin.com/in/arashout/' title='LinkedIn'> <span
-        class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i
-        class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span> </a>
-    - website: Resume
-      username: Arash
-      url: 'http://arashout.site/pdf/arash_resume.pdf'
-      html: >-
-        <a href='http://arashout.site/pdf/arash_resume.pdf' title='PDF Resume'>
-        <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i> </span> </a>
-work:
+profiles:
+  - website: Gmail
+    username: arash.out@gmail.com
+    url: 'mailto:arash'
+    html: >-
+      <a href='mailto:arash.out@gmail.com' title='Email me'> <span
+      class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
+      class='fa fa-envelope fa-stack-1x fa-inverse'></i> </span> </a>
+  - website: Github
+    username: arashout
+    url: 'https://github.com/arashout'
+    html: >-
+      <a href='https://github.com/arashout' title='Github'> <span
+      class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
+      class='fa fa-github fa-stack-1x fa-inverse'></i> </span> </a>
+  - website: LinkedIn
+    username: arashout
+    url: 'https://www.linkedin.com/in/arashout/'
+    html: >-
+      <a href='https://www.linkedin.com/in/arashout/' title='LinkedIn'> <span
+      class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i
+      class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span> </a>
+  - website: Resume
+    username: Arash
+    url: 'http://arashout.site/pdf/arash_resume.pdf'
+    html: >-
+      <a href='http://arashout.site/pdf/arash_resume.pdf' title='PDF Resume'>
+      <span class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i>
+      <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i> </span> </a>
+experiences:
   - company: Ravelin
     position: Junior Software Engineer
     startDate: 2017-09-12T00:00:00.000Z
