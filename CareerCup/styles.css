@@ -12,6 +12,10 @@ hr {
   height: 1px;
   noshade: disabled; }
 
+p {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
 table {
   width: 100%; }
 
@@ -41,7 +45,8 @@ th {
   font-weight: bold; }
 
 ul {
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 li {
   margin: 5px 0px 5px; }
@@ -54,5 +59,8 @@ th {
 
 #projects > div > ul > li {
   margin: 9px 0px 9px; }
+
+.tech {
+  margin-left: 25px; }
 
 /*# sourceMappingURL=styles.css.map */

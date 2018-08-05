@@ -1,6 +1,5 @@
 import os
 from jinja2 import Environment, FileSystemLoader
-import json
 import yaml
 import pdfkit
 from datetime import datetime
@@ -27,9 +26,7 @@ if __name__ == '__main__':
     [base_resume_name, extension] = os.path.splitext(args.path_resume)
     
     with open(args.path_resume, 'r') as f:
-        if extension == '.json':
-            dict_resume = json.load(f) 
-        elif extension == '.yaml':
+        if extension == '.yaml':
             dict_resume = yaml.load(f)
         else:
             print('Resume file format not recognized!')
@@ -37,13 +34,11 @@ if __name__ == '__main__':
     
     dict_anon = None
     if args.path_anon is not None:
-        with open(args.path_anon, 'r') as f:
-            if extension == '.json':
-                dict_anon = json.load(f) 
-            elif extension == '.yaml':
+        with open(args.path_anon, 'r') as f: 
+            if extension == '.yaml':
                 dict_anon = yaml.load(f)
             else:
-                print('Resume file format not recognized!')
+                print('Resume file format not recognized!, please use YAML')
                 exit()
 
     gr = ResumeGenerator(

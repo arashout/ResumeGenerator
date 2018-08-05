@@ -18,6 +18,11 @@ hr {
     noshade: disabled;
 }
 
+p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 table {
     width: 100%;
 }
@@ -54,6 +59,7 @@ th {
 
 ul {
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 li {
@@ -69,4 +75,7 @@ th {
 }
 #projects > div > ul > li {
     margin: 9px 0px 9px;
+}
+.tech {
+    margin-left: 25px;
 }
