@@ -52,8 +52,8 @@ experiences:
           Full stack engineer primarily developing and maintaining customer facing 
           dashboard built with Angular and powered by Go micro-services
     highlights:
-      - Adding end-to-end tests to Angular dashboard to catch regressions during critical user paths
-      - Upgrading various parts of CI pipeline to ultimately reducing build times by 50%
+      - Added end-to-end tests to Angular dashboard to catch regressions during critical user paths
+      - Upgraded various parts of CI pipeline to ultimately reduce build times by 50%
       - Improved/implemented many new features of graph visualizations, including closest neighbors highlighting and various filters
       - Built a critical chrome extension used daily by the sales team for prospecting
     technologies:
