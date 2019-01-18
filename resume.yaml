@@ -122,17 +122,27 @@ projects:
       - Flask
       - TypeScript
       - MongoDB
-  - name: Blob Combat Simulation
-    source: 'https://github.com/arashout/BlobCombatSimulator'
+  - name: Cell Sorting Research Project
+    source: 'https://github.com/arashout/MECH493'
     summary: >-
-      Combat simulation where 'blobs' evolve over time using 
-      neural networks and genetic algorithms. Includes fast-forward
-      button to significantly reduce training time.
+      Building an automated pipeline to cluster similar blood cells
+      based on 4 channels of microscopy images to enable easier analysis
+      for researchers.
     technologies:
-      - C++
-      - SFML
-      - QtCreator
-      - Eigen
+      - OpenCV
+      - Pandas
+      - scikit-learn
+  # - name: Blob Combat Simulation
+  #   source: 'https://github.com/arashout/BlobCombatSimulator'
+  #   summary: >-
+  #     Combat simulation where 'blobs' evolve over time using 
+  #     neural networks and genetic algorithms. Includes fast-forward
+  #     button to significantly reduce training time.
+  #   technologies:
+  #     - C++
+  #     - SFML
+  #     - QtCreator
+  #     - Eigen
   - name: RoboRooney
     source: 'https://github.com/arashout/RoboRooneyStarter'
     summary: >-
