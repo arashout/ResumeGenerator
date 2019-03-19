@@ -1,7 +1,7 @@
 settings:
   includeSkills: false
 basics:
-  name: Ash Outadi
+  name: Arash Outadi
   label: Programmer
   email: arash.out@gmail.com
   phone: null
@@ -77,17 +77,17 @@ experiences:
       - VBA
       - SAP
       - Excel
-  - company: Canadian Logistics
-    position: Data Analyst
-    startDate: 2015-12-27T00:00:00.000Z
-    endDate: 2016-09-05T00:00:00.000Z
-    highlights:
-      - Automated daily manual processing task saving 2 hours per day
-      - Improved hiring practices through visualization of low retention rates associated with certain labor agencies
-    technologies:
-      - Python
-      - VBA
-      - Excel
+  # - company: Canadian Logistics
+  #   position: Data Analyst
+  #   startDate: 2015-12-27T00:00:00.000Z
+  #   endDate: 2016-09-05T00:00:00.000Z
+  #   highlights:
+  #     - Automated daily manual processing task saving 2 hours per day
+  #     - Improved hiring practices through visualization of low retention rates associated with certain labor agencies
+  #   technologies:
+  #     - Python
+  #     - VBA
+  #     - Excel
 education: 
   -
     institution: University of British Columbia
@@ -122,15 +122,25 @@ projects:
       - Flask
       - TypeScript
       - MongoDB
+  - name: Crank Arm Motion Tracking
+    source: 'https://github.com/arashout/spindle-rotation-tracking'
+    summary: >-
+      Using motion capture and circle fitting to validate capstone project's sensor readings
+    technologies:
+      - OpenCV
+      - numpy
+      - pandas
+      - scipy
   - name: Cell Sorting Research Project
     source: 'https://github.com/arashout/MECH493'
     summary: >-
       Building an automated pipeline to cluster cells using features embedded in hidden layers of DCNN
     technologies:
       - OpenCV
-      - Pandas
+      - pandas
       - scikit-learn
       - C#
+      - WPF
   - name: Blob Combat Simulation
     source: 'https://github.com/arashout/BlobCombatSimulator'
     summary: >-
