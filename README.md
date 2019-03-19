@@ -20,12 +20,12 @@ Also note you have to install [wkhtmltopdf](https://github.com/pdfkit/pdfkit/wik
 You can generate your pdf resume by running (inside the cloned repo)
 ```bash
 pipenv shell
-python3 main.py -o 'path/for/pdf/output'
+python3 main.py resume.yaml -o 'path/for/pdf/output'
 ```
 Optionally you can anonymize your PDF by supplying a second argument
 ```bash
 pipenv shell
-python3 main.py -o 'path/for/pdf/output' -a 'path/to/anon_data.yaml'
+python3 main.py resume.yaml -o 'path/for/pdf/output' -a 'path/to/anon_data.yaml'
 ```
 Where `anon_data.yaml` is a json dictionary where the keys are sensitive information
 you want to replace and the values are generic text to replace them with
