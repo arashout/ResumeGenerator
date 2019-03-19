@@ -1,7 +1,7 @@
 settings:
   includeSkills: false
 basics:
-  name: Arash Outadi
+  name: Ash Outadi
   label: Programmer
   email: arash.out@gmail.com
   phone: null
@@ -9,7 +9,7 @@ basics:
   location:
     address: null
     postalCode: null
-    city: Vancouver
+    city: Burnaby
     countryCode: CA
     region: British Columbia
     regionCode: BC
@@ -125,30 +125,29 @@ projects:
   - name: Cell Sorting Research Project
     source: 'https://github.com/arashout/MECH493'
     summary: >-
-      Building an automated pipeline to cluster similar blood cells
-      based on 4 channels of microscopy images to enable easier analysis
-      for researchers.
+      Building an automated pipeline to cluster cells using features embedded in hidden layers of DCNN
     technologies:
       - OpenCV
       - Pandas
       - scikit-learn
-  # - name: Blob Combat Simulation
-  #   source: 'https://github.com/arashout/BlobCombatSimulator'
-  #   summary: >-
-  #     Combat simulation where 'blobs' evolve over time using 
-  #     neural networks and genetic algorithms. Includes fast-forward
-  #     button to significantly reduce training time.
-  #   technologies:
-  #     - C++
-  #     - SFML
-  #     - QtCreator
-  #     - Eigen
-  - name: RoboRooney
-    source: 'https://github.com/arashout/RoboRooneyStarter'
+      - C#
+  - name: Blob Combat Simulation
+    source: 'https://github.com/arashout/BlobCombatSimulator'
     summary: >-
-      Slack-bot to quickly scan all available openings at football pitches using
-      the MyLocalPitch API and help arrange soccer scrimmages through Slack
+      Combat simulation where 'blobs' evolve over time using 
+      neural networks and genetic algorithms. Includes fast-forward
+      button to significantly reduce training time.
     technologies:
-      - Go
-      - Slack
-      - Heroku
+      - C++
+      - SFML
+      - QtCreator
+      - Eigen
+  # - name: RoboRooney
+  #   source: 'https://github.com/arashout/RoboRooneyStarter'
+  #   summary: >-
+  #     Slack-bot to quickly scan all available openings at football pitches using
+  #     the MyLocalPitch API and help arrange soccer scrimmages through Slack
+  #   technologies:
+  #     - Go
+  #     - Slack
+  #     - Heroku

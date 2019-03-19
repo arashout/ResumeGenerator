@@ -1,0 +1,63 @@
+Burnaby, CA
+
+Ash Outadi
+
+arash.out@gmail.com
+
+Experience
+Software Engineer
+
+Ravelin
+
+Sep 2017 - Aug 2018
+
+Full stack engineer primarily developing and maintaining customer facing
+dashboard built with Angular and powered by Go micro-services
+Added end-to-end tests to Angular dashboard to catch regressions during
+critical user paths
+Upgraded various parts of CI pipeline to ultimately reduce build times by 50%
+Improved/implemented many new features of graph visualizations, including
+closest neighbors highlighting and various filters
+Built a critical chrome extension used daily by the sales team for prospecting
+Angular, TypeScript, Golang, Cirlcle CI, Docker, D3, React
+Engineering Co-op Student
+Andritz Ltd
+May 2016 - Dec 2016
+Created a suite of Excel tools saving PMs 10 hours every week
+Significantly reduced time spent searching for SAP materials with small
+database app
+Python, SQLite, VBA, SAP, Excel
+Data Analyst
+Canadian Logistics
+Dec 2015 - Sep 2016
+Automated daily manual processing task saving 2 hours per day
+Improved hiring practices through visualization of low retention rates
+associated with certain labor agencies
+Python, VBA, Excel
+
+Education
+Vancouver, BC
+
+University of British Columbia
+
+Sep 2013 - May 2019
+
+Bachelor of Applied Science in GPA: 3.6/4.3
+
+Projects
+JobBot (Github) Python, Selenium, XPath, NLP,
+The bot that landed me my job at Ravelin! It's automatically able to apply to job
+listings using personalized cover letter based on keywords from the job
+description.
+Improved UBC Transcript (Github) Python, Flask, TypeScript, MongoDB,
+Bookmarklet that enhances and beautifies the unofficial UBC transcript, it gets
+about 450 hits per month and is included as a sidebar resource on the r/UBC
+subreddit!
+Cell Sorting Research Project (Github) OpenCV, Pandas, scikit-learn,
+Building an automated pipeline to cluster similar blood cells based on 4
+channels of microscopy images to enable easier analysis for researchers.
+RoboRooney (Github) Go, Slack, Heroku,
+Slack-bot to quickly scan all available openings at football pitches using the
+MyLocalPitch API and help arrange soccer scrimmages through Slack
+
+
