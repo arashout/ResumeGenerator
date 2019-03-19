@@ -27,7 +27,9 @@
     <div id='employment' class='section'>
         <p class="subtitle">Experience</p>
         <table>
-            <hr> {% for experience in experiences %}
+            <hr> 
+            {% for experience in experiences %}
+            {% if not experience.noDisplay %}
             <tr>
                 <th class="left">{{experience.position}}</th>
                 <th class="center">{{experience.company}}</th>
@@ -50,6 +52,7 @@
                     <div class="tech"><i>{{experience.technologies|join(', ') }}</i></div>
                 </td>
             </tr>
+            {% endif %}
             {% endfor %}
         </table>
     </div>
@@ -73,11 +76,13 @@
         <div>
             <ul>
                 {% for project in projects %}
+                {% if not project.noDisplay %}
                 <li><b>{{project.name}}</b>&nbsp;
                     {% if project.source is defined %}<a href="{{project.source}}">(Github){% endif %}</a>
                     <i>{% for tech in project.technologies %}{{tech}}, {% endfor %}</i><br>
                     {{project.summary}}<br> 
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>

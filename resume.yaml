@@ -1,7 +1,7 @@
 settings:
   includeSkills: false
 basics:
-  name: Arash Outadi
+  name: Arash (Ash) Outadi
   label: Programmer
   email: arash.out@gmail.com
   phone: null
@@ -77,17 +77,18 @@ experiences:
       - VBA
       - SAP
       - Excel
-  # - company: Canadian Logistics
-  #   position: Data Analyst
-  #   startDate: 2015-12-27T00:00:00.000Z
-  #   endDate: 2016-09-05T00:00:00.000Z
-  #   highlights:
-  #     - Automated daily manual processing task saving 2 hours per day
-  #     - Improved hiring practices through visualization of low retention rates associated with certain labor agencies
-  #   technologies:
-  #     - Python
-  #     - VBA
-  #     - Excel
+  - company: Canadian Logistics
+    position: Data Analyst
+    startDate: 2015-12-27T00:00:00.000Z
+    endDate: 2016-09-05T00:00:00.000Z
+    highlights:
+      - Automated daily manual processing task saving 2 hours per day
+      - Improved hiring practices through visualization of low retention rates associated with certain labor agencies
+    technologies:
+      - Python
+      - VBA
+      - Excel
+    # noDisplay: true
 education: 
   -
     institution: University of British Columbia
@@ -132,15 +133,14 @@ projects:
       - pandas
       - scipy
   - name: Cell Sorting Research Project
-    source: 'https://github.com/arashout/MECH493'
+    source: 'https://bitbucket.org/arashoutadi/mech493/src/master'
     summary: >-
       Building an automated pipeline to cluster cells using features embedded in hidden layers of DCNN
     technologies:
       - OpenCV
       - pandas
       - scikit-learn
-      - C#
-      - WPF
+      - C#/.NET
   - name: Blob Combat Simulation
     source: 'https://github.com/arashout/BlobCombatSimulator'
     summary: >-
@@ -152,12 +152,13 @@ projects:
       - SFML
       - QtCreator
       - Eigen
-  # - name: RoboRooney
-  #   source: 'https://github.com/arashout/RoboRooneyStarter'
-  #   summary: >-
-  #     Slack-bot to quickly scan all available openings at football pitches using
-  #     the MyLocalPitch API and help arrange soccer scrimmages through Slack
-  #   technologies:
-  #     - Go
-  #     - Slack
-  #     - Heroku
+  - name: RoboRooney
+    source: 'https://github.com/arashout/RoboRooneyStarter'
+    summary: >-
+      Slack-bot to quickly scan all available openings at football pitches using
+      the MyLocalPitch API and help arrange soccer scrimmages through Slack
+    technologies:
+      - Go
+      - Slack
+      - Heroku
+    # noDisplay: true
