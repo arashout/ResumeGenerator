@@ -123,6 +123,16 @@ projects:
       - Flask
       - TypeScript
       - MongoDB
+  - name: Sudoku Solver
+    source: 'https://sudoku-solve.azurewebsites.net'
+    summary: >-
+      A Sudoku Solver that uses the constraint propagation technique
+      to efficiently solve puzzles.
+    technologies:
+      - C#
+      - ASP.net
+      - React
+      - Azure
   - name: Crank Arm Motion Tracking
     source: 'https://github.com/arashout/spindle-rotation-tracking'
     summary: >-
