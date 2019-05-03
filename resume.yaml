@@ -124,7 +124,8 @@ projects:
       - TypeScript
       - MongoDB
   - name: Sudoku Solver
-    source: 'https://sudoku-solve.azurewebsites.net'
+    demo: 'https://sudoku-solve.azurewebsites.net'
+    source: 'https://github.com/arashout/SudokuSolveCP'
     summary: >-
       A Sudoku Solver that uses the constraint propagation technique
       to efficiently solve puzzles.
