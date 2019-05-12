@@ -13,7 +13,7 @@ basics:
     countryCode: CA
     region: British Columbia
     regionCode: BC
-  htmlTitle: Mechanical Engineer &rArr; Software Engineer
+  htmlTitle: New Graduate Software Engineer
 profiles:
   - website: Gmail
     username: arash.out@gmail.com
@@ -123,6 +123,13 @@ projects:
       - Flask
       - TypeScript
       - MongoDB
+  - name: Alphabet Match
+    demo: https://arashout.github.io/alphabet-match/
+    image: https://raw.githubusercontent.com/arashout/alphabet-match/master/demo.gif
+    source: https://github.com/arashout/alphabet-match
+    summary: >-
+      Memory matching game built to help adults learn English letters and 
+      their associated sounds. Made with love for my grandmother!
   - name: Sudoku Solver
     demo: 'https://sudoku-solve.azurewebsites.net'
     source: 'https://github.com/arashout/SudokuSolveCP'
