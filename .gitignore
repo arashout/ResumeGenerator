@@ -7,9 +7,7 @@ __pycache__/
 
 # Sensitive stuff
 
-arash_resume*
-arash_anon*
-resume.pdf
+*.pdf
 *resume.html
 *temp.html
 *out.html

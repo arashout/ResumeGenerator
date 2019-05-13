@@ -9,7 +9,7 @@ basics:
   location:
     address: null
     postalCode: null
-    city: Burnaby
+    city: null
     countryCode: CA
     region: British Columbia
     regionCode: BC
@@ -88,7 +88,6 @@ experiences:
       - Python
       - VBA
       - Excel
-    # noDisplay: true
 education: 
   -
     institution: University of British Columbia
@@ -101,7 +100,6 @@ education:
     gpa: 3.6/4.3
 projects:
   - name: JobBot
-    source: 'https://github.com/arashout/JobBot'
     summary: >-
       The bot that landed me my job at Ravelin! It's automatically able
       to apply to job listings using personalized cover letter based on 
@@ -111,39 +109,6 @@ projects:
       - Selenium
       - XPath
       - NLP
-  - name: Improved UBC Transcript
-    source: 'https://github.com/arashout/ImprovedUBCTranscript'
-    writeup: 'http://arashout.site/posts/improved-ubc-transcript'
-    summary: >-
-      Bookmarklet that enhances and beautifies the unofficial UBC transcript,
-      it gets about 450 hits per month and is included as a sidebar resource
-      on the r/UBC subreddit!
-    technologies:
-      - Python
-      - Flask
-      - TypeScript
-      - MongoDB
-  - name: Alphabet Match
-    demo: https://arashout.github.io/alphabet-match/
-    image: https://raw.githubusercontent.com/arashout/alphabet-match/master/demo.gif
-    source: https://github.com/arashout/alphabet-match
-    summary: >-
-      Memory matching game built to help adults learn English letters and 
-      their associated sounds. Made with love for my grandmother!
-    technologies:
-      - React
-      - TypeScript
-  - name: Sudoku Solver
-    demo: 'https://sudoku-solve.azurewebsites.net'
-    source: 'https://github.com/arashout/SudokuSolveCP'
-    summary: >-
-      A Sudoku Solver that uses the constraint propagation technique
-      to efficiently solve puzzles.
-    technologies:
-      - C#
-      - ASP.net
-      - React
-      - Azure
   - name: Crank Arm Motion Tracking
     source: 'https://github.com/arashout/spindle-rotation-tracking'
     summary: >-
@@ -173,13 +138,4 @@ projects:
       - SFML
       - QtCreator
       - Eigen
-  - name: RoboRooney
-    source: 'https://github.com/arashout/RoboRooneyStarter'
-    summary: >-
-      Slack-bot to quickly scan all available openings at football pitches using
-      the MyLocalPitch API and help arrange soccer scrimmages through Slack
-    technologies:
-      - Go
-      - Slack
-      - Heroku
-    # noDisplay: true
+  

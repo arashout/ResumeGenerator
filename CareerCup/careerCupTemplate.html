@@ -17,7 +17,11 @@
         <div id='contact' class='section'>
             <table>
                 <tr>
+                    {% if basics.location.city is none %}
+                    <th class="left"></th>
+                    {% else %}
                     <th class="left">{{basics.location.city}}, {{basics.location.countryCode}}</th>
+                    {% endif %}
                     <th class="center title" rowspan="2">{{basics.name}}</th>
                     <th class="right">{{basics.email}}</th>
                 </tr>
