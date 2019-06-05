@@ -52,7 +52,7 @@ experiences:
           Full stack engineer primarily developing and maintaining customer facing 
           dashboard built with Angular and powered by Go micro-services
     highlights:
-      - Added end-to-end tests to Angular dashboard to catch regressions during critical user paths
+      - Added end-to-end tests using Cypress to Angular dashboard to catch regressions during critical user paths
       - Upgraded various parts of CI pipeline to ultimately reduce build times by 50%
       - Improved/implemented many new features of graph visualizations, including closest neighbors highlighting and various filters
       - Built a critical chrome extension used daily by the sales team for prospecting
@@ -64,6 +64,7 @@ experiences:
       - Docker
       - D3
       - React
+      - Cypress
   - company: Andritz Ltd
     position: Engineering Co-op Student
     startDate: 2016-05-22T00:00:00.000Z

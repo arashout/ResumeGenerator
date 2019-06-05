@@ -56,7 +56,7 @@ experiences:
       dashboard built with Angular and powered by Go micro-services
     highlights:
       - >-
-        Added end-to-end tests to Angular dashboard to catch regressions during
+        Added end-to-end tests using Cypress to Angular dashboard to catch regressions during
         critical user paths
       - >-
         Upgraded various parts of CI pipeline to ultimately reduce build times
@@ -75,6 +75,7 @@ experiences:
       - Docker
       - D3
       - React
+      - Cypress
   - company: Andritz Ltd
     position: Engineering Co-op Student
     startDate: 2016-05-22T00:00:00.000Z
