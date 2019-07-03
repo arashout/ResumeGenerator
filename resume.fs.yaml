@@ -9,7 +9,7 @@ basics:
   location:
     address: null
     postalCode: null
-    city: Burnaby
+    city: null
     countryCode: CA
     region: British Columbia
     regionCode: BC
@@ -75,6 +75,8 @@ experiences:
       - Docker
       - D3
       - React
+      - Cypress
+      - AWS
   - company: Andritz Ltd
     position: Engineering Co-op Student
     startDate: 2016-05-22T00:00:00.000Z
@@ -89,19 +91,6 @@ experiences:
       - SQLite
       - VBA
       - SAP
-      - Excel
-  - company: Canadian Logistics
-    position: Data Analyst
-    startDate: 2015-12-27T00:00:00.000Z
-    endDate: 2016-09-05T00:00:00.000Z
-    highlights:
-      - Automated daily manual processing task saving 2 hours per day
-      - >-
-        Improved hiring practices through visualization of low retention rates
-        associated with certain labor agencies
-    technologies:
-      - Python
-      - VBA
       - Excel
 education:
   - institution: University of British Columbia
@@ -136,7 +125,17 @@ projects:
       - Flask
       - TypeScript
       - MongoDB
-      - TypeScript
+      - AWS Lambda
+  - name: Alphabet Match
+    demo: 'https://arashout.github.io/alphabet-match/'
+    image: 'https://raw.githubusercontent.com/arashout/alphabet-match/master/demo.gif'
+    source: 'https://github.com/arashout/alphabet-match'
+    summary: >-
+      Memory matching game built to help adults learn English letters and  their
+      associated sounds. Made with love for my grandmother!
+    technologies:
+    - React
+    - TypeScript
   - name: Sudoku Solver
     demo: 'https://sudoku-solve.azurewebsites.net'
     source: 'https://github.com/arashout/SudokuSolveCP'
@@ -148,7 +147,6 @@ projects:
       - ASP.net
       - React
       - Azure
-      - Eigen
   - name: RoboRooney
     source: 'https://github.com/arashout/RoboRooneyStarter'
     summary: >-
