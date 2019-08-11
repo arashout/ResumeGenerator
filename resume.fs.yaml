@@ -13,7 +13,7 @@ basics:
     countryCode: CA
     region: British Columbia
     regionCode: BC
-  htmlTitle: New Graduate Software Engineer
+  htmlTitle: Software Engineer
 profiles:
   - website: Gmail
     username: arash.out@gmail.com
@@ -47,6 +47,17 @@ profiles:
       fa-stack-2x"></i> <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
       </span> </a>
 experiences:
+  - company: Infoblox
+    position: Software Engineer
+    startDate: 2019-07-15T00:00:00.000Z
+    endDate: null
+    summary: >-
+      Server-side application developer building DDI services
+    technologies:
+      - Golang
+      - Docker
+      - Kubernetes
+      - Protobuf
   - company: Ravelin
     position: Software Engineer
     startDate: 2017-09-12T00:00:00.000Z
