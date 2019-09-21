@@ -46,7 +46,6 @@ if __name__ == '__main__':
         dict_resume=dict_resume,
         path_html_template=r'CareerCup/careerCupTemplate.html',
         dict_anon=dict_anon
-
     )
     if args.path_output is not None:
         gr.create_pdf_from_html(args.path_output)

@@ -52,12 +52,12 @@ experiences:
     startDate: 2019-07-15T00:00:00.000Z
     endDate: null
     summary: >-
-      Server-side application developer building DDI services
+      Building and maintaining Go micro-services powering Bloxone DDI services.
     technologies:
       - Golang
       - Docker
       - Kubernetes
-      - Protobuf
+      - AWS
   - company: Ravelin
     position: Software Engineer
     startDate: 2017-09-12T00:00:00.000Z
@@ -88,21 +88,6 @@ experiences:
       - React
       - Cypress
       - AWS
-  - company: Andritz Ltd
-    position: Engineering Co-op Student
-    startDate: 2016-05-22T00:00:00.000Z
-    endDate: 2016-12-20T00:00:00.000Z
-    highlights:
-      - Created a suite of Excel tools saving PMs 10 hours every week
-      - >-
-        Significantly reduced time spent searching for SAP materials with small
-        database app
-    technologies:
-      - Python
-      - SQLite
-      - VBA
-      - SAP
-      - Excel
 education:
   - institution: University of British Columbia
     location:
