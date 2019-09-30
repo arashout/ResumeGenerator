@@ -5,7 +5,8 @@ Here's a preview ![preview of resume generated](preview_resume.png)
 ## Instructions
 
 ### Setup resume.yaml
-[Example resume.yaml]()
+See the example [resume.fs.yaml](resumes/resume.fs.yaml) in the `resumes/`
+directory.
 
 ### Clone Repo and Install Requirements
 The next step is to clone the repository and install the requirements
