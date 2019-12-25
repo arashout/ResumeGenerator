@@ -8,9 +8,91 @@
     <title>Career Cup Resume Template</title>
     <meta name='description' content='Career Cup Resume Template'>
     <meta name='author' content='Arash Outadi'>
-
-    <link rel='stylesheet' href='styles.css'>
 </head>
+<style>
+    html {
+        font-size: 15pt;
+        font-family: Arial;
+    }
+
+    body {
+        width: 9in;
+        padding: 0in 0.1in 0in 0.3in;
+    }
+
+    hr {
+        margin: 0px 0px 5px;
+        background-color: black;
+        height: 1px;
+        noshade: disabled;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: auto;
+    }
+
+    .section {
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        margin: 0px;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    ul {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    li {
+        margin: 5px 0px 5px;
+    }
+
+    th {
+        width: 3in;
+    }
+
+    .marginless {
+        margin: 0px;
+    }
+
+    #projects>div>ul>li {
+        margin: 9px 0px 9px;
+    }
+
+    .tech {
+        margin-left: 25px;
+    }
+</style>
 
 <body>
     <div id='resume'>
@@ -31,7 +113,7 @@
     <div id='employment' class='section'>
         <p class="subtitle">Experience</p>
         <table>
-            <hr> 
+            <hr>
             {% for experience in experiences %}
             {% if not experience.noDisplay %}
             <tr>
@@ -70,7 +152,8 @@
                 <th class="right">{{credential.startDate | dateformat}} - {{credential.endDate | dateformat}}</th>
         </table>
         <ul>
-            <li>{{credential.studyType}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</li>
+            <li>{{credential.studyType}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA:
+                {{credential.gpa}}{% endif %}</li>
         </ul>
         {% endfor %}
     </div>
@@ -84,7 +167,7 @@
                 <li><b>{{project.name}}</b>&nbsp;
                     {% if project.source is defined %}<a href="{{project.source}}">(Github){% endif %}</a>
                     <i>{% for tech in project.technologies %}{{tech}}, {% endfor %}</i><br>
-                    {{project.summary}}<br> 
+                    {{project.summary}}<br>
                 </li>
                 {% endif %}
                 {% endfor %}
@@ -96,9 +179,9 @@
         <h2 class="subtitle">Languages and Technologies</h2>
         <hr>
         <ul>
-        {% for skill in skills %}
-        <li>{{skill.name}}: {{ skill.keywords|join(', ') }}</li>  
-        {% endfor %}
+            {% for skill in skills %}
+            <li>{{skill.name}}: {{ skill.keywords|join(', ') }}</li>
+            {% endfor %}
         </ul>
     </div>
     {% endif %}
