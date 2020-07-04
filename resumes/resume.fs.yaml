@@ -53,6 +53,11 @@ experiences:
     endDate: null
     summary: >-
       Building and maintaining Go micro-services powering Bloxone DDI services.
+    highlights:
+      - >- 
+        Replaced custom health checking application with several manual steps to Prometheus with automatic Kubernetes service discovery
+      - >- 
+        Added tracing capabilities following the OpenTracing API, significantly improving developer productivity when diagnosing complex bugs involving multiple services
     technologies:
       - Golang
       - Docker
@@ -97,6 +102,18 @@ education:
     startDate: 2013-09-07T00:00:00.000Z
     endDate: 2019-05-01T00:00:00.000Z
     gpa: 3.6/4.3
+contributions:
+  - name: NuShell
+    role: Contributor
+    source: 'https://github.com/nushell/nushell/pulls?q=+is%3Apr+author%3Aarashout+'
+    summary: >-
+      Cross-platform shell that understands the structure of your data!
+    highlights:
+      - Implemented streaming functionality when opening files with proper encoding support. 
+        Making it possible to stream very large files.
+      - Added additional math functions while refactoring math command and improving test coverage.
+    technologies:
+      - Rust
 projects:
   - name: JobBot
     source: 'https://github.com/arashout/JobBot'
@@ -123,6 +140,7 @@ projects:
       - MongoDB
       - AWS Lambda
   - name: Alphabet Match
+    noDisplay: true
     demo: 'https://arashout.github.io/alphabet-match/'
     image: 'https://raw.githubusercontent.com/arashout/alphabet-match/master/demo.gif'
     source: 'https://github.com/arashout/alphabet-match'
@@ -133,6 +151,7 @@ projects:
     - React
     - TypeScript
   - name: Sudoku Solver
+    noDisplay: true
     demo: 'https://sudoku-solve.azurewebsites.net'
     source: 'https://github.com/arashout/SudokuSolveCP'
     summary: >-

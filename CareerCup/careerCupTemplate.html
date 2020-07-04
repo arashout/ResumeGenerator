@@ -31,7 +31,7 @@
     <div id='employment' class='section'>
         <p class="subtitle">Experience</p>
         <table>
-            <hr> 
+            <hr>
             {% for experience in experiences %}
             {% if not experience.noDisplay %}
             <tr>
@@ -70,10 +70,38 @@
                 <th class="right">{{credential.startDate | dateformat}} - {{credential.endDate | dateformat}}</th>
         </table>
         <ul>
-            <li>{{credential.studyType}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA: {{credential.gpa}}{% endif %}</li>
+            <li>{{credential.studyType}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA:
+                {{credential.gpa}}{% endif %}</li>
         </ul>
         {% endfor %}
     </div>
+
+    {% if contributions is defined and contributions|length > 0 %}
+    <div id='contributions' class='section'>
+        <h2 class="subtitle">Open Source Contributions</h2>
+        <hr>
+        <div>
+            <ul>
+                {% for project in contributions %}
+                {% if not project.noDisplay %}
+                <li><b>{{project.name}}</b>&nbsp;
+                    {% if project.source is defined %}<a href="{{project.source}}">(Source){% endif %}</a>
+                    <i>{% for tech in project.technologies %}{{tech}}{{ ", " if not loop.last }}{% endfor %}</i><br>
+                    {{project.summary}}<br>
+                    <ul>
+                        {% for highlight in project.highlights%}
+                        <li>{{highlight}}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if projects is defined and projects|length > 0 %}
     <div id='projects' class='section'>
         <h2 class="subtitle">Projects</h2>
         <hr>
@@ -82,23 +110,25 @@
                 {% for project in projects %}
                 {% if not project.noDisplay %}
                 <li><b>{{project.name}}</b>&nbsp;
-                    {% if project.source is defined %}<a href="{{project.source}}">(Github){% endif %}</a>
-                    <i>{% for tech in project.technologies %}{{tech}}, {% endfor %}</i><br>
-                    {{project.summary}}<br> 
+                    {% if project.source is defined %}<a href="{{project.source}}">(Source){% endif %}</a>
+                    <i>{% for tech in project.technologies %}{{tech}}{{ ", " if not loop.last }}{% endfor %}</i><br>
+                    {{project.summary}}<br>
                 </li>
                 {% endif %}
                 {% endfor %}
             </ul>
         </div>
     </div>
+    {% endif %}
+
     {% if settings.includeSkills == 'True' %}
     <div id='skills' class='section'>
         <h2 class="subtitle">Languages and Technologies</h2>
         <hr>
         <ul>
-        {% for skill in skills %}
-        <li>{{skill.name}}: {{ skill.keywords|join(', ') }}</li>  
-        {% endfor %}
+            {% for skill in skills %}
+            <li>{{skill.name}}: {{ skill.keywords|join(', ') }}</li>
+            {% endfor %}
         </ul>
     </div>
     {% endif %}

@@ -27,7 +27,7 @@ Optionally you can anonymize your PDF by supplying a second argument
 pipenv shell
 python3 main.py resume.yaml -o 'path/for/pdf/output' -a 'path/to/anon_data.yaml'
 ```
-Where `anon_data.yaml` is a json dictionary where the keys are sensitive information
+Where `anon_data.yaml` is a dictionary where the keys are sensitive information
 you want to replace and the values are generic text to replace them with
 e.g.
 ```yaml
@@ -47,3 +47,6 @@ e.g.
 
 #### CareerCup Template
 If you don't really care about the CLI tool and just want the HTML template, navigate to the CareerCup directory and you'll find the Jinja2 HTML template and the styles.css stylesheet.
+
+## Examples
+An example of a resume is inside `resumes` folder
