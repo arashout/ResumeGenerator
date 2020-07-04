@@ -11,6 +11,7 @@ pyyaml = "*"
 [dev-packages]
 mypy = "*"
 black = "*"
+pylint = "*"
 
 [pipenv]
 allow_prereleases = true
