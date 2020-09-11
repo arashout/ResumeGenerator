@@ -152,8 +152,9 @@
                 <th class="right">{{credential.startDate | dateformat}} - {{credential.endDate | dateformat}}</th>
         </table>
         <ul>
-            <li>{{credential.studyType}} in {{credential.area}}&nbsp;{%- if credential.gpa != '' -%}GPA:
-                {{credential.gpa}}{% endif %}</li>
+            <li>{{credential.studyType}} in
+                {{credential.area}}{%- if credential.gpa -%}&nbsp;&nbsp;&nbsp;&nbsp;GPA:{{credential.gpa}}{% endif %}
+            </li>
         </ul>
         {% endfor %}
     </div>

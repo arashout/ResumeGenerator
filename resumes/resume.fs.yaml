@@ -94,11 +94,20 @@ experiences:
       - Cypress
       - AWS
 education:
+  - institution: Georgia Institute of Technology
+    location:
+      city: Atlanta
+      regionCode: GA
+    studyType: Master of Science
+    area: Computer Science
+    startDate: 2020-09-07T00:00:00.000Z
+    endDate: 2023-05-01T00:00:00.000Z
   - institution: University of British Columbia
     location:
       city: Vancouver
       regionCode: BC
     studyType: Bachelor of Applied Science
+    area: Mechanical Engineering
     startDate: 2013-09-07T00:00:00.000Z
     endDate: 2019-05-01T00:00:00.000Z
     gpa: 3.6/4.3
