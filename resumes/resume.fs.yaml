@@ -55,9 +55,9 @@ experiences:
       Building and maintaining Go micro-services powering Bloxone DDI services.
     highlights:
       - >- 
-        Replaced custom health checking application with several manual steps to Prometheus with automatic Kubernetes service discovery
+        Reduced developer time spent by 75% by replacing custom health checking application with several manual steps with Prometheus using Kubernetes service discovery.
       - >- 
-        Added tracing capabilities following the OpenTracing API, significantly improving developer productivity when diagnosing complex bugs involving multiple services
+        Significantly improved developer productivity when diagnosing complex bugs involving multiple services by adding tracing capabilities to various services.
     technologies:
       - Golang
       - Docker
