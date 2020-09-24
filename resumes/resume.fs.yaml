@@ -52,7 +52,7 @@ experiences:
     startDate: 2019-07-15T00:00:00.000Z
     endDate: null
     summary: >-
-      Building and maintaining Go micro-services powering Bloxone DDI services.
+      Building and maintaining Go services powering Bloxone DDI services.
     highlights:
       - >- 
         Reduced developer time spent by 75% by replacing custom health checking application with several manual steps with Prometheus using Kubernetes service discovery.
