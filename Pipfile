@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"jinja2" = "==2.9.6"
+"jinja2" = "==2.11.3"
 pdfkit = "==0.6.1"
 pyyaml = "*"
 
