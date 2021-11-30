@@ -5,7 +5,7 @@ Here's a preview ![preview of resume generated](preview_resume.png)
 ## Instructions
 
 ### Setup resume.yaml
-See the example [resume.fs.yaml](resumes/resume.fs.yaml) in the `resumes/`
+See the example [resume.platf.yaml](resumes/resume.platf.yaml) in the `resumes/`
 directory.
 
 ### Clone Repo and Install Requirements
