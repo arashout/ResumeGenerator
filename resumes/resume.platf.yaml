@@ -1,5 +1,6 @@
 settings:
   includeSkills: false
+  includeProjects: false
 basics:
   name: Arash (Ash) Outadi
   label: Programmer
@@ -52,11 +53,11 @@ experiences:
     startDate: 2020-11-15T00:00:00.000Z
     endDate: null
     summary: >-
-      Building and maintaining Go services powering Bloxone DDI services.
+      Building IoT infrastructure and Developer Productivity Tooling
     highlights:
-      - Unified AWS Lambda continuous deployment pipeline using custom K8s controller with rest of infrastructure, vastly improving developer productivity
+      - Unified AWS Lambda deployment pipeline with rest of KT infrastructure using custom K8s controller, vastly improving developer productivity
       - Mentored and onboarded new hires on the IoT team; allowing them to hit the ground running and contribute immediately!
-      - Reduced major pain-points in embedded developer workflow and tooling, resulting in faster release cycles 
+      - Significantly reduced IoT toil and embedded developer workflow and tooling, resulting in much faster release cycles
     technologies:
       - Golang
       - Ruby/Rails

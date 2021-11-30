@@ -184,7 +184,7 @@
     </div>
     {% endif %}
 
-    {% if projects is defined and projects|length > 0 %}
+    {% if projects is defined and projects|length > 0 and settings.includeProjects == 'True' %}
     <div id='projects' class='section'>
         <h2 class="subtitle">Projects</h2>
         <hr>

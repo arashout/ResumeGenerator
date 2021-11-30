@@ -1,7 +1,6 @@
 import os
 from jinja2 import Environment, FileSystemLoader
 import yaml
-import pdfkit
 from datetime import datetime
 import argparse
 from ResumeGenerator import ResumeGenerator
