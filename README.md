@@ -17,6 +17,16 @@ pipenv install
 ```
 Also note you have to install [wkhtmltopdf](https://github.com/pdfkit/pdfkit/wiki/Installing-WKHTMLTOPDF)
 
+### Using Nix
+```bash
+nix-shell pip-shell.nix
+# Inside Nix Shell
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python3 main.py resumes/resume.platf.yaml -o output/test.pdf
+```
+
 ### Generate PDF resume from command-line
 You can generate your pdf resume by running (inside the cloned repo)
 ```bash
