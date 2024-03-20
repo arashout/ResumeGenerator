@@ -1,4 +1,4 @@
--i https://pypi.python.org/simple/
+-i https://pypi.python.org/simple
 jinja2==2.11.3
 markupsafe==2.0.0rc1
 pdfkit==0.6.1
