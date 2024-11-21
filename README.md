@@ -17,6 +17,11 @@ pipenv install
 ```
 Also note you have to install [wkhtmltopdf](https://github.com/pdfkit/pdfkit/wiki/Installing-WKHTMLTOPDF)
 
+### Windows
+```
+py -m pipenv install
+py .\main.py .\resumes\resume.platf.yaml
+```
 ### Using Nix
 ```bash
 nix-shell pip-shell.nix

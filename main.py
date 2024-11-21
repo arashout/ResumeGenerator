@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     with open(args.path_resume, "r") as f:
         if extension == ".yaml":
-            dict_resume = yaml.load(f)
+            dict_resume = yaml.load(f, Loader=yaml.FullLoader)
         else:
             print("Resume file format not recognized!")
             exit()

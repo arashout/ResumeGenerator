@@ -48,12 +48,25 @@ profiles:
       fa-stack-2x"></i> <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
       </span> </a>
 experiences:
+  - company: Dropbox
+    position: Software Engineer
+    startDate: 2022-11-15T00:00:00.000Z
+    endDate: 2024-11-15T00:00:00.000Z
+    summary: Moved 300+ engineers from Phabricator over to Github and built out custom tooling to enrich UX, ensure proper code reviews and maintain compliance on Github
+    highlights:
+      - Custom rules engine used for efficiently assigning code reviewers, making automated comments based on code changes and other actions, resulting in significant time savings for engineers
+      - Internal Go CLI for interacting with git/Github and managing pull requests using internal tooling and CI
+      - Go service that ensures all code owners and subscribers have reviewed PR before merge, integrated with Github webhooks
+      - A Notification service built-in on top of Github webhooks that addressed short-comings with built-in Github notifications
+    technologies:
+    - Golang
+    - Python
+    - Bazel
   - company: KeepTruckin
     position: Software Engineer
     startDate: 2020-11-15T00:00:00.000Z
-    endDate: null
-    summary: >-
-      Building IoT infrastructure and Developer Productivity Tooling
+    endDate: 2022-08-15T00:00:00.000Z
+    summary: Building IoT infrastructure and Developer Productivity Tooling
     highlights:
       - Unified AWS Lambda deployment pipeline with rest of KT infrastructure using custom K8s controller, vastly improving developer productivity
       - Mentored and onboarded new hires on the IoT team; allowing them to hit the ground running and contribute immediately!
@@ -69,8 +82,7 @@ experiences:
     position: Software Engineer
     startDate: 2019-07-15T00:00:00.000Z
     endDate: 2020-10-15T00:00:00.000Z
-    summary: >-
-      Building and maintaining Go services powering Bloxone DDI services.
+    summary: Building and maintaining Go services powering Bloxone DDI services.
     highlights:
       - >- 
         Reduced developer time spent by 75% by replacing custom health checking application with several manual steps with Prometheus using Kubernetes service discovery.
@@ -122,7 +134,6 @@ education:
     area: Mechanical Engineering
     startDate: 2013-09-07T00:00:00.000Z
     endDate: 2019-05-01T00:00:00.000Z
-    gpa: 3.6/4.3
 contributions:
   - name: NuShell
     role: Contributor

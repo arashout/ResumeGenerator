@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"jinja2" = "==2.11.3"
-pdfkit = "==0.6.1"
+"jinja2" = "*"
 pyyaml = "*"
+weasyprint ="*"
 
 [dev-packages]
 mypy = "*"

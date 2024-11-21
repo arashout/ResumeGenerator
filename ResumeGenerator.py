@@ -2,10 +2,10 @@ import os
 from jinja2 import Environment, FileSystemLoader
 import json
 import yaml
-import pdfkit
 from datetime import datetime
 import argparse
 import re
+from weasyprint import HTML, CSS
 
 
 # Resume + Template Constants
@@ -55,7 +55,10 @@ class ResumeGenerator(object):
 
     def create_pdf_from_html(self, output_name: str):
         html_path = self.create_html_resume(output_name + ".html")
-        pdfkit.from_file(
-            html_path, output_name + ".pdf", options={"page-size": "Letter", "dpi": 400}
+        html = HTML(filename=html_path)
+        css = CSS(string='@page { size: A3; margin: 1cm }')
+        html.write_pdf(
+            output_name + ".pdf",
+            stylesheets=[css]
         )
 
