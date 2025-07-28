@@ -8,40 +8,22 @@ Here's a preview ![preview of resume generated](preview_resume.png)
 See the example [resume.platf.yaml](resumes/resume.platf.yaml) in the `resumes/`
 directory.
 
-### Clone Repo and Install Requirements
-The next step is to clone the repository and install the requirements
+### Clone Repo and Setup
 ```bash
 git clone https://github.com/arashout/ResumeGenerator.git
 cd ResumeGenerator
-pipenv install
-```
-Also note you have to install [wkhtmltopdf](https://github.com/pdfkit/pdfkit/wiki/Installing-WKHTMLTOPDF)
-
-### Windows
-```
-py -m pipenv install
-py .\main.py .\resumes\resume.platf.yaml
-```
-### Using Nix
-```bash
-nix-shell pip-shell.nix
-# Inside Nix Shell
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python3 main.py resumes/resume.platf.yaml -o output/test.pdf
+uv init
+uv add pyyaml jinja2 weasyprint argparse
 ```
 
 ### Generate PDF resume from command-line
-You can generate your pdf resume by running (inside the cloned repo)
+You can generate your pdf resume by running:
 ```bash
-pipenv shell
-python3 main.py resume.yaml -o 'path/for/pdf/output'
+uv run python main.py resumes/resume.platf.yaml -o resume
 ```
-Optionally you can anonymize your PDF by supplying a second argument
+Optionally you can anonymize your PDF by supplying a second argument:
 ```bash
-pipenv shell
-python3 main.py resume.yaml -o 'path/for/pdf/output' -a 'path/to/anon_data.yaml'
+uv run python main.py resumes/resume.platf.yaml -o resume -a path/to/anon_data.yaml
 ```
 Where `anon_data.yaml` is a dictionary where the keys are sensitive information
 you want to replace and the values are generic text to replace them with

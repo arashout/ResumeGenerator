@@ -6,7 +6,7 @@ basics:
   label: Programmer
   email: arash.out@gmail.com
   phone: null
-  website: 'http://arashout.site'
+  website: "http://arashout.site"
   location:
     address: null
     postalCode: null
@@ -18,21 +18,21 @@ basics:
 profiles:
   - website: Gmail
     username: arash.out@gmail.com
-    url: 'mailto:arash'
+    url: "mailto:arash"
     html: >-
       <a href='mailto:arash.out@gmail.com' title='Email me'> <span
       class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
       class='fa fa-envelope fa-stack-1x fa-inverse'></i> </span> </a>
   - website: Github
     username: arashout
-    url: 'https://github.com/arashout'
+    url: "https://github.com/arashout"
     html: >-
       <a href='https://github.com/arashout' title='Github'> <span
       class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
       class='fa fa-github fa-stack-1x fa-inverse'></i> </span> </a>
   - website: LinkedIn
     username: arashout
-    url: 'https://www.linkedin.com/in/arashout/'
+    url: "https://www.linkedin.com/in/arashout/"
     html: >-
       <a href='https://www.linkedin.com/in/arashout/' title='LinkedIn'> <span
       class="fa-stack fa-lg"> <i class="fa fa-circle fa-stack-2x"></i> <i
@@ -48,6 +48,23 @@ profiles:
       fa-stack-2x"></i> <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
       </span> </a>
 experiences:
+  - company: BitComplete
+    position: Software Engineer Consultant
+    startDate: 2024-11-18T00:00:00.000Z
+    endDate: null
+    summary: Full-stack development for AI video generation platform, leading revenue-driving initiatives including dynamic regional pricing, customer engagment platform integration and developing various UI flows
+    highlights:
+      - Built dynamic regional pricing using Stripe, resulting in 300% revenue increase from international markets in A/B testing
+      - Lead integration with Customer Engagement Platform (Customer.io), significantly improving our ability to segment, track and target customers resulting in increased open rates
+      - Developed various UI flows for the platform using React, including a pricing modals, TikTok integrations and upsell modals
+    technologies:
+      - Python
+      - Django
+      - React
+      - TypeScript
+      - PostgreSQL
+      - Stripe
+      - Chromatic
   - company: Dropbox
     position: Software Engineer
     startDate: 2022-11-15T00:00:00.000Z
@@ -59,9 +76,9 @@ experiences:
       - Go service that ensures all code owners and subscribers have reviewed PR before merge, integrated with Github webhooks
       - A Notification service built-in on top of Github webhooks that addressed short-comings with built-in Github notifications
     technologies:
-    - Golang
-    - Python
-    - Bazel
+      - Golang
+      - Python
+      - Bazel
   - company: KeepTruckin
     position: Software Engineer
     startDate: 2020-11-15T00:00:00.000Z
@@ -84,11 +101,9 @@ experiences:
     endDate: 2020-10-15T00:00:00.000Z
     summary: Building and maintaining Go services powering Bloxone DDI services.
     highlights:
-      - >- 
-        Reduced developer time spent by 75% by replacing custom health checking application with several manual steps with Prometheus using Kubernetes service discovery.
       - >-
-        Outlined and implemented best logging/tracing practices for the team leading to improved bug resolution times.
-      - >- 
+        Added Prometheus health checks to all services using Kubernetes service discovery, replacing manual health checks and significantly reducing toil
+      - >-
         Lead initiative to implement distributed tracing significantly improving observability when dealing with complex multi-service bugs
     technologies:
       - Golang
@@ -104,11 +119,8 @@ experiences:
       dashboard built with Angular and powered by Go micro-services
     highlights:
       - >-
-        Added end-to-end tests using Cypress to Angular dashboard to catch regressions during
+        Introduced end-to-end tests using Cypress to Angular dashboard to catch regressions during
         critical user paths
-      - >-
-        Upgraded various parts of CI pipeline to ultimately reduce build times
-        by 50%
       - >-
         Improved/implemented many new features of graph visualizations,
         including closest neighbors highlighting and various filters
@@ -137,18 +149,18 @@ education:
 contributions:
   - name: NuShell
     role: Contributor
-    source: 'https://github.com/nushell/nushell/pulls?q=+is%3Apr+author%3Aarashout+'
+    source: "https://github.com/nushell/nushell/pulls?q=+is%3Apr+author%3Aarashout+"
     summary: >-
       Cross-platform shell that understands the structure of your data!
     highlights:
-      - Implemented streaming functionality when opening files with proper encoding support. 
+      - Implemented streaming functionality when opening files with proper encoding support.
         Making it possible to stream very large files.
       - Added additional math functions while refactoring math command and improving test coverage.
     technologies:
       - Rust
 projects:
   - name: JobBot
-    source: 'https://github.com/arashout/JobBot'
+    source: "https://github.com/arashout/JobBot"
     summary: >-
       The bot that landed me my job at Ravelin! It's automatically able to apply
       to job listings using personalized cover letter based on  keywords from
@@ -159,8 +171,8 @@ projects:
       - XPath
       - NLP
   - name: Improved UBC Transcript
-    source: 'https://github.com/arashout/ImprovedUBCTranscript'
-    writeup: 'http://arashout.site/posts/improved-ubc-transcript'
+    source: "https://github.com/arashout/ImprovedUBCTranscript"
+    writeup: "http://arashout.site/posts/improved-ubc-transcript"
     summary: >-
       Bookmarklet that enhances and beautifies the unofficial UBC transcript, it
       gets about 450 hits per month and is included as a sidebar resource on the
@@ -173,29 +185,29 @@ projects:
       - AWS Lambda
   - name: Alphabet Match
     noDisplay: true
-    demo: 'https://arashout.github.io/alphabet-match/'
-    image: 'https://raw.githubusercontent.com/arashout/alphabet-match/master/demo.gif'
-    source: 'https://github.com/arashout/alphabet-match'
+    demo: "https://arashout.github.io/alphabet-match/"
+    image: "https://raw.githubusercontent.com/arashout/alphabet-match/master/demo.gif"
+    source: "https://github.com/arashout/alphabet-match"
     summary: >-
       Memory matching game built to help adults learn English letters and  their
       associated sounds. Made with love for my grandmother!
     technologies:
-    - React
-    - TypeScript
+      - React
+      - TypeScript
   - name: Sudoku Solver
     noDisplay: true
-    demo: 'https://sudoku-solve.azurewebsites.net'
-    source: 'https://github.com/arashout/SudokuSolveCP'
+    demo: "https://sudoku-solve.azurewebsites.net"
+    source: "https://github.com/arashout/SudokuSolveCP"
     summary: >-
       A Sudoku Solver that uses the constraint propagation technique to
       efficiently solve puzzles.
     technologies:
-      - 'C#'
+      - "C#"
       - ASP.net
       - React
       - Azure
   - name: RoboRooney
-    source: 'https://github.com/arashout/RoboRooneyStarter'
+    source: "https://github.com/arashout/RoboRooneyStarter"
     summary: >-
       Slack-bot to quickly scan all available openings at football pitches using
       the MyLocalPitch API and help arrange soccer scrimmages through Slack
