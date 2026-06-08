@@ -1,10 +1,15 @@
-generate: resumes/resume.platf.yaml main.py ResumeGenerator.py
-	pipenv run python main.py resumes/resume.fs.yaml -o output/arash_outadi_resume
-trim: 
-	pdfseparate -f 1 arash_outadi_resume.pdf %d.pdf
-	rm 2.pdf
-	mv 1.pdf arash_outadi_resume.pdf
-copy_to_portfolio resumes/resume.platf.yaml main.py ResumeGenerator.py:
-	python3 main.py resumes/resume.platf.yaml -o output/platform.pdf
-	cp resumes/resume.platf.yaml ../arashout.site/_data/resume.yaml 
-	cp output/platform.pdf.pdf ../arashout.site/pdf/arash_resume.pdf
+SRC  := resumes/resume.yaml
+OUT  := arash_outadi_resume
+SITE := ../arashout.site
+
+# Build arash_outadi_resume.{html,pdf} from the YAML source.
+generate: $(SRC) main.py ResumeGenerator.py
+	uv run python main.py $(SRC) -o $(OUT)
+
+# Publish to the portfolio site: the resume data (drives the HTML page) and the
+# built PDF (served at /pdf/ash_outadi_resume.pdf).
+publish: generate
+	cp $(SRC) $(SITE)/_data/resume.yaml
+	cp $(OUT).pdf $(SITE)/pdf/ash_outadi_resume.pdf
+
+.PHONY: generate publish

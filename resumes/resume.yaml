@@ -3,10 +3,10 @@ settings:
   includeProjects: false
 basics:
   name: Arash (Ash) Outadi
-  label: Programmer
+  label: Software Engineer
   email: arash.out@gmail.com
   phone: null
-  website: "http://arashout.site"
+  website: "https://arashout.site"
   location:
     address: null
     postalCode: null
@@ -18,7 +18,7 @@ basics:
 profiles:
   - website: Gmail
     username: arash.out@gmail.com
-    url: "mailto:arash"
+    url: "mailto:arash.out@gmail.com"
     html: >-
       <a href='mailto:arash.out@gmail.com' title='Email me'> <span
       class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
@@ -39,72 +39,70 @@ profiles:
       class="fa fa-linkedin fa-stack-1x fa-inverse"></i> </span> </a>
   - website: Resume
     username: Arash
-    url: >-
-      https://github.com/arashout/ResumeGenerator/raw/master/arash_outadi_resume.pdf
+    url: "/pdf/ash_outadi_resume.pdf"
     html: >-
       <a
-      href="https://github.com/arashout/ResumeGenerator/raw/master/arash_outadi_resume.pdf"
+      href="/pdf/ash_outadi_resume.pdf"
       title="PDF Resume"> <span class="fa-stack fa-lg"> <i class="fa fa-circle
       fa-stack-2x"></i> <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
       </span> </a>
 experiences:
-  - company: BitComplete
-    position: Software Engineer Consultant
-    startDate: 2024-11-18T00:00:00.000Z
+  - company: Hypernatural (BitComplete)
+    position: Software Engineer
+    startDate: 2025-03-03T00:00:00.000Z
     endDate: null
-    summary: Full-stack development for AI video generation platform, leading revenue-driving initiatives including dynamic regional pricing, customer engagment platform integration and developing various UI flows
+    summary: Full-stack engineer at AI video generation startup. Owning features E2E, many infrastructure migrations and developer productivity
     highlights:
-      - Built dynamic regional pricing using Stripe, resulting in 300% revenue increase from international markets in A/B testing
-      - Lead integration with Customer Engagement Platform (Customer.io), significantly improving our ability to segment, track and target customers resulting in increased open rates
-      - Developed various UI flows for the platform using React, including a pricing modals, TikTok integrations and upsell modals
+      - Built dynamic regional pricing with Stripe, resulting in 300% revenue increase from international markets
+      - Migrated from PGVector (AWS RDS) to S3 Vectors, decommissioning a $1,000/month database
+      - Improved CI test speed by 2.25x and TypeScript formatting by 20x by eliminating unnecessary password hashing, loading DB from snapshots, and replacing Prettier with BiomeJS
+      - Built dev-infrastructure and AI-agent tooling that enables non-engineers to contribute directly to the production codebase
+      - Overhauled video pricing model to a more sustainable per-duration charge through iterative A/B testing, while still achieving a 29% lift in subscription conversion rate
     technologies:
       - Python
       - Django
       - React
       - TypeScript
       - PostgreSQL
-      - Stripe
-      - Chromatic
+      - AWS
+      - Terraform
+      - Playwright
   - company: Dropbox
     position: Software Engineer
     startDate: 2022-11-15T00:00:00.000Z
     endDate: 2024-11-15T00:00:00.000Z
-    summary: Moved 300+ engineers from Phabricator over to Github and built out custom tooling to enrich UX, ensure proper code reviews and maintain compliance on Github
+    summary: Migrated 300+ engineers from Phabricator to Github and built custom tooling to ensure proper code reviews and maintain compliance
     highlights:
-      - Custom rules engine used for efficiently assigning code reviewers, making automated comments based on code changes and other actions, resulting in significant time savings for engineers
-      - Internal Go CLI for interacting with git/Github and managing pull requests using internal tooling and CI
-      - Go service that ensures all code owners and subscribers have reviewed PR before merge, integrated with Github webhooks
-      - A Notification service built-in on top of Github webhooks that addressed short-comings with built-in Github notifications
+      - Built rules engine for auto-assigning code reviewers and making automated comments based on code changes
+      - Internal Go CLI for managing pull requests and interacting with Github via internal tooling and CI
+      - Github webhook services for enforcing code owner reviews before merge and improving on Github's built-in notifications
     technologies:
       - Golang
       - Python
       - Bazel
-  - company: KeepTruckin
+  - company: KeepTruckin (Motive)
     position: Software Engineer
     startDate: 2020-11-15T00:00:00.000Z
     endDate: 2022-08-15T00:00:00.000Z
-    summary: Building IoT infrastructure and Developer Productivity Tooling
+    summary: IoT infrastructure and Developer Productivity Tooling
     highlights:
-      - Unified AWS Lambda deployment pipeline with rest of KT infrastructure using custom K8s controller, vastly improving developer productivity
-      - Mentored and onboarded new hires on the IoT team; allowing them to hit the ground running and contribute immediately!
-      - Significantly reduced IoT toil and embedded developer workflow and tooling, resulting in much faster release cycles
+      - Unified AWS Lambda deployment pipeline with rest of infrastructure using custom K8s controller
+      - Mentored and onboarded new hires on the IoT team
+      - Improved embedded developer workflows and tooling, resulting in faster release cycles
     technologies:
       - Golang
       - Ruby/Rails
       - Kubernetes
       - AWS
       - Bazel
-      - Nix
   - company: Infoblox
     position: Software Engineer
     startDate: 2019-07-15T00:00:00.000Z
     endDate: 2020-10-15T00:00:00.000Z
     summary: Building and maintaining Go services powering Bloxone DDI services.
     highlights:
-      - >-
-        Added Prometheus health checks to all services using Kubernetes service discovery, replacing manual health checks and significantly reducing toil
-      - >-
-        Lead initiative to implement distributed tracing significantly improving observability when dealing with complex multi-service bugs
+      - Added Prometheus health checks to all services using Kubernetes service discovery, replacing manual health checks
+      - Led initiative to implement distributed tracing, improving observability for complex multi-service bugs
     technologies:
       - Golang
       - Docker
@@ -118,25 +116,15 @@ experiences:
       Full stack engineer primarily developing and maintaining customer facing
       dashboard built with Angular and powered by Go micro-services
     highlights:
-      - >-
-        Introduced end-to-end tests using Cypress to Angular dashboard to catch regressions during
-        critical user paths
-      - >-
-        Improved/implemented many new features of graph visualizations,
-        including closest neighbors highlighting and various filters
-      - >-
-        Built a critical chrome extension used daily by the sales team for
-        prospecting
+      - Introduced end-to-end tests using Cypress to catch regressions during critical user paths
+      - Built graph visualizations with D3 including closest neighbors highlighting and filtering
+      - Built a Chrome extension used daily by the sales team for prospecting
     technologies:
       - Angular
       - TypeScript
       - Golang
-      - Cirlcle CI
-      - Docker
       - D3
-      - React
       - Cypress
-      - AWS
 education:
   - institution: University of British Columbia
     location:
@@ -159,6 +147,17 @@ contributions:
     technologies:
       - Rust
 projects:
+  - name: Yappers
+    demo: "https://yappers.pages.dev"
+    summary: >-
+      Web app for making Slack-ready animated Yapper emoji from a headshot.
+    technologies:
+      - SolidJS
+      - TypeScript
+      - Vite
+      - Tailwind CSS
+      - Cloudflare Pages
+      - FAL
   - name: JobBot
     source: "https://github.com/arashout/JobBot"
     summary: >-
