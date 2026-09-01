@@ -15,3 +15,6 @@ __pycache__/
 # Output
 output.pdf
 output.html
+
+# Private notes with internal company metrics
+HANDOFF.md

@@ -1,9 +1,10 @@
 settings:
   includeSkills: false
   includeProjects: false
+  includeContributions: false
 basics:
   name: Arash (Ash) Outadi
-  label: Software Engineer
+  label: Senior Software Engineer
   email: arash.out@gmail.com
   phone: null
   website: "https://arashout.site"
@@ -14,7 +15,7 @@ basics:
     countryCode: CA
     region: British Columbia
     regionCode: BC
-  htmlTitle: Software Engineer
+  htmlTitle: Senior Software Engineer
 profiles:
   - website: Gmail
     username: arash.out@gmail.com
@@ -23,11 +24,11 @@ profiles:
       <a href='mailto:arash.out@gmail.com' title='Email me'> <span
       class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
       class='fa fa-envelope fa-stack-1x fa-inverse'></i> </span> </a>
-  - website: Github
+  - website: GitHub
     username: arashout
     url: "https://github.com/arashout"
     html: >-
-      <a href='https://github.com/arashout' title='Github'> <span
+      <a href='https://github.com/arashout' title='GitHub'> <span
       class='fa-stack fa-lg'> <i class='fa fa-circle fa-stack-2x'></i> <i
       class='fa fa-github fa-stack-1x fa-inverse'></i> </span> </a>
   - website: LinkedIn
@@ -48,16 +49,18 @@ profiles:
       </span> </a>
 experiences:
   - company: Hypernatural (BitComplete)
-    position: Software Engineer
+    position: Senior Software Engineer
     startDate: 2025-03-03T00:00:00.000Z
     endDate: null
-    summary: Full-stack engineer at AI video generation startup. Owning features E2E, many infrastructure migrations and developer productivity
+    summary: Contracted by BitComplete to Hypernatural; owned AI product, monetization, infrastructure, and developer-tooling work end to end
     highlights:
-      - Built dynamic regional pricing with Stripe, resulting in 300% revenue increase from international markets
-      - Migrated from PGVector (AWS RDS) to S3 Vectors, decommissioning a $1,000/month database
-      - Improved CI test speed by 2.25x and TypeScript formatting by 20x by eliminating unnecessary password hashing, loading DB from snapshots, and replacing Prettier with BiomeJS
-      - Built dev-infrastructure and AI-agent tooling that enables non-engineers to contribute directly to the production codebase
-      - Overhauled video pricing model to a more sustainable per-duration charge through iterative A/B testing, while still achieving a 29% lift in subscription conversion rate
+      - Launched an OAuth-enabled MCP server for AI video creation and editing; within three weeks, MCP signups converted at 2.7x the non-MCP rate and generated 20% of new-user MRR
+      - Stood up PR preview environments and Claude Code Web integration that seeded agentic workflows across the team; merged PRs per contributor rose 32% and non-engineer PRs grew 8x in the following quarter
+      - Gave agents and non-engineers safe production-data access through a Metabase MCP over a PII-safe read-only follower, replacing guesses and risky queries against the primary
+      - Owned Stripe payments end to end, from team subscriptions, trials, and credit top-ups to plan changes, and tripled international revenue with dynamic regional pricing
+      - Decommissioned a $1,000/month database by migrating vector search from pgvector on AWS RDS to S3 Vectors
+      - Sped up CI tests 2.25x and TypeScript formatting 20x by eliminating unnecessary password hashing, loading the DB from snapshots, and replacing Prettier with BiomeJS
+      - Promoted to Senior Software Engineer in March 2026 after one year
     technologies:
       - Python
       - Django
@@ -66,65 +69,72 @@ experiences:
       - PostgreSQL
       - AWS
       - Terraform
+      - Stripe
+      - MCP
       - Playwright
   - company: Dropbox
     position: Software Engineer
-    startDate: 2022-11-15T00:00:00.000Z
+    startDate: 2022-08-15T00:00:00.000Z
     endDate: 2024-11-15T00:00:00.000Z
-    summary: Migrated 300+ engineers from Phabricator to Github and built custom tooling to ensure proper code reviews and maintain compliance
     highlights:
-      - Built rules engine for auto-assigning code reviewers and making automated comments based on code changes
-      - Internal Go CLI for managing pull requests and interacting with Github via internal tooling and CI
-      - Github webhook services for enforcing code owner reviews before merge and improving on Github's built-in notifications
+      - Migrated 300+ engineers from Phabricator to GitHub while preserving review and compliance workflows
+      - Built a self-service rules engine that assigned reviewers, commented on code changes, and enforced configurable merge conditions
+      - Built a Go CLI and webhook services for managing pull requests and enforcing code-owner reviews across GitHub and CI
     technologies:
-      - Golang
+      - Go
       - Python
       - Bazel
-  - company: KeepTruckin (Motive)
+  - company: Motive (formerly KeepTruckin)
     position: Software Engineer
     startDate: 2020-11-15T00:00:00.000Z
     endDate: 2022-08-15T00:00:00.000Z
-    summary: IoT infrastructure and Developer Productivity Tooling
     highlights:
-      - Unified AWS Lambda deployment pipeline with rest of infrastructure using custom K8s controller
-      - Mentored and onboarded new hires on the IoT team
-      - Improved embedded developer workflows and tooling, resulting in faster release cycles
+      - Cut CI/CD time 85%, from more than 40 minutes to 5, through caching and selective application deployments
+      - Unified AWS Lambda and Kubernetes deployments with a custom controller and Bazel rules integrated with Argo CD
+      - Cut IoT log volume 50%, saving thousands of dollars per month
+      - Designed a versioned, priority-aware IoT job pipeline across AWS IoT Core, Lambda, DynamoDB, Kafka, and Protobuf
     technologies:
-      - Golang
-      - Ruby/Rails
+      - Go
+      - Python
+      - Ruby on Rails
       - Kubernetes
       - AWS
       - Bazel
+      - Kafka
+      - Protobuf
   - company: Infoblox
     position: Software Engineer
     startDate: 2019-07-15T00:00:00.000Z
-    endDate: 2020-10-15T00:00:00.000Z
-    summary: Building and maintaining Go services powering Bloxone DDI services.
+    endDate: 2020-11-15T00:00:00.000Z
     highlights:
-      - Added Prometheus health checks to all services using Kubernetes service discovery, replacing manual health checks
-      - Led initiative to implement distributed tracing, improving observability for complex multi-service bugs
+      - Cut developer time spent on health checks 75% by replacing a manual application with Prometheus and Kubernetes service discovery
+      - Led end-to-end distributed tracing for asynchronous multi-service workflows, improving observability and incident resolution
+      - Cut production Docker image size about 40% through multi-stage builds and dependency cleanup
     technologies:
-      - Golang
+      - Go
+      - PostgreSQL
       - Docker
       - Kubernetes
       - AWS
+      - Prometheus
+      - OpenTracing
   - company: Ravelin
     position: Software Engineer
+    noDisplay: true
     startDate: 2017-09-12T00:00:00.000Z
     endDate: 2018-08-17T00:00:00.000Z
-    summary: >-
-      Full stack engineer primarily developing and maintaining customer facing
-      dashboard built with Angular and powered by Go micro-services
+    summary: Full-stack engineer building fraud-detection dashboards backed by Go microservices
     highlights:
-      - Introduced end-to-end tests using Cypress to catch regressions during critical user paths
-      - Built graph visualizations with D3 including closest neighbors highlighting and filtering
-      - Built a Chrome extension used daily by the sales team for prospecting
+      - Cut CircleCI build times 50% and introduced Cypress end-to-end tests for critical workflows
+      - Built interactive D3 fraud graphs and a React Chrome extension used daily by sales
     technologies:
       - Angular
       - TypeScript
-      - Golang
+      - Go
+      - React
       - D3
       - Cypress
+      - CircleCI
 education:
   - institution: University of British Columbia
     location:
@@ -134,6 +144,11 @@ education:
     area: Mechanical Engineering
     startDate: 2013-09-07T00:00:00.000Z
     endDate: 2019-05-01T00:00:00.000Z
+volunteer:
+  - organization: FTLO Volleyball
+    position: Lead Software Engineer
+    startDate: 2026-04-01T00:00:00.000Z
+    endDate: null
 contributions:
   - name: NuShell
     role: Contributor
@@ -141,9 +156,8 @@ contributions:
     summary: >-
       Cross-platform shell that understands the structure of your data!
     highlights:
-      - Implemented streaming functionality when opening files with proper encoding support.
-        Making it possible to stream very large files.
-      - Added additional math functions while refactoring math command and improving test coverage.
+      - Implemented streaming file reads with encoding support, enabling files larger than memory to be processed
+      - Expanded math commands while refactoring their implementation and improving test coverage
     technologies:
       - Rust
 projects:

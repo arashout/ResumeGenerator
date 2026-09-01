@@ -56,9 +56,8 @@ class ResumeGenerator(object):
     def create_pdf_from_html(self, output_name: str):
         html_path = self.create_html_resume(output_name + ".html")
         html = HTML(filename=html_path)
-        css = CSS(string='@page { size: A3; margin: 1cm }')
+        css = CSS(string="@page { size: Letter; margin: 0.55in 0.6in; }")
         html.write_pdf(
             output_name + ".pdf",
             stylesheets=[css]
         )
-

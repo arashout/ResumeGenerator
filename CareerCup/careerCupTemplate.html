@@ -11,33 +11,37 @@
 </head>
 <style>
     html {
-        font-size: 15pt;
+        font-size: 10pt;
         font-family: Arial;
+        line-height: 1.2;
     }
 
     body {
-        width: 9in;
-        padding: 0in 0.1in 0in 0.3in;
+        width: auto;
+        margin: 0;
+        padding: 0;
     }
 
     hr {
-        margin: 0px 0px 5px;
+        margin: 1px 0 4px;
         background-color: black;
         height: 1px;
         noshade: disabled;
     }
 
     p {
-        margin-top: 5px;
-        margin-bottom: 10px;
+        margin: 2px 0 4px;
     }
 
     table {
         width: 100%;
+        border-collapse: collapse;
     }
 
     th {
         white-space: nowrap;
+        vertical-align: top;
+        width: 33.333%;
     }
 
     .left {
@@ -59,7 +63,7 @@
     }
 
     .section {
-        margin-bottom: 15px;
+        margin-bottom: 8px;
     }
 
     .subtitle {
@@ -69,16 +73,12 @@
     }
 
     ul {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0;
+        padding-left: 24px;
     }
 
     li {
-        margin: 5px 0px 5px;
-    }
-
-    th {
-        width: 3in;
+        margin: 2px 0;
     }
 
     .marginless {
@@ -90,7 +90,23 @@
     }
 
     .tech {
-        margin-left: 25px;
+        margin: 3px 0 1px 24px;
+    }
+
+    tbody.experience + tbody.experience tr:first-child th {
+        padding-top: 6px;
+    }
+
+    .experience,
+    #education,
+    #volunteer,
+    #contributions,
+    #skills {
+        break-inside: avoid;
+    }
+
+    a {
+        color: black;
     }
 </style>
 
@@ -102,7 +118,7 @@
                     {% if basics.location.city is none %}
                     <th class="left"></th>
                     {% else %}
-                    <th class="left">{{basics.location.city}}, {{basics.location.countryCode}}</th>
+                    <th class="left">{{basics.location.city}}, {{basics.location.regionCode}}</th>
                     {% endif %}
                     <th class="center title" rowspan="2">{{basics.name}}</th>
                     <th class="right">{{basics.email}}</th>
@@ -112,10 +128,11 @@
     </div>
     <div id='employment' class='section'>
         <p class="subtitle">Experience</p>
+        <hr>
         <table>
-            <hr>
             {% for experience in experiences %}
             {% if not experience.noDisplay %}
+            <tbody class="experience">
             <tr>
                 <th class="left">{{experience.position}}</th>
                 <th class="center">{{experience.company}}</th>
@@ -135,9 +152,12 @@
                         <li>{{highlight}}</li>
                         {% endfor %}
                     </ul>
+                    {% if settings.includeExperienceTechnologies != false %}
                     <div class="tech"><i>{{experience.technologies|join(', ') }}</i></div>
+                    {% endif %}
                 </td>
             </tr>
+            </tbody>
             {% endif %}
             {% endfor %}
         </table>
@@ -159,7 +179,26 @@
         {% endfor %}
     </div>
 
-    {% if contributions is defined and contributions|length > 0 %}
+    {% if volunteer is defined and volunteer|length > 0 %}
+    <div id='volunteer' class='section'>
+        <h2 class="subtitle">Volunteer</h2>
+        <hr> {% for role in volunteer %}
+        <table>
+            <tr>
+                <th class="left">{{role.position}}</th>
+                <th class="center">{{role.organization}}</th>
+                {% if role.endDate is not none %}
+                <th class="right">{{role.startDate | dateformat}} - {{role.endDate | dateformat}}</th>
+                {% else %}
+                <th class="right">{{role.startDate | dateformat}} - Present</th>
+                {% endif %}
+            </tr>
+        </table>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if contributions is defined and contributions|length > 0 and settings.includeContributions != false %}
     <div id='contributions' class='section'>
         <h2 class="subtitle">Open Source Contributions</h2>
         <hr>
