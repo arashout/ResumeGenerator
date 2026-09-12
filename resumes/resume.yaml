@@ -52,7 +52,7 @@ experiences:
     position: Senior Software Engineer
     startDate: 2025-03-03T00:00:00.000Z
     endDate: null
-    summary: Contracted by BitComplete to Hypernatural; owned AI product, monetization, infrastructure, and developer-tooling work end to end
+    summary: Contracted by BitComplete to Hypernatural; Worked on AI product and owned much of web monetization, infrastructure, and developer-tooling
     highlights:
       - Launched an OAuth-enabled MCP server for AI video creation and editing; within three weeks, MCP signups converted at 2.7x the non-MCP rate and generated 20% of new-user MRR
       - Stood up PR preview environments and Claude Code Web integration that seeded agentic workflows across the team; merged PRs per contributor rose 32% and non-engineer PRs grew 8x in the following quarter
